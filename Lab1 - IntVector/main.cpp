@@ -62,11 +62,11 @@ int main()
     v2.insert(3, 1337);
     v2.remove_at(8);
     cout << v2 << endl;
-    //Should contain 0 1 2 1337 4 5 6 7 9
+    //Should contain 0 1 2 3 1337 4 5 6 7 9
 
 
     IntVector v4;
-    v4 = v3; // Operator overloading: assignment
+    v4 = v3;
 
     /*
     cout << "Fourth vector:" << endl;

@@ -95,7 +95,17 @@ void IntVector::push_back(int elem)
 // IndexOutOfRangeException.
 void IntVector::insert(int index, int elem)
 {
-    array[index] = elem;
+    // Right shifts index element and all elements above by one
+    // Then sets index to elem
+    if (index <= count)
+    {
+        array[index] = elem;
+        //Count (vector size) increases by one
+        count++;
+    }
+    // Throws exception if index is out of range
+    else
+        throw new IndexOutOfRangeException;
 }
 
 int IntVector::at(int index) const
