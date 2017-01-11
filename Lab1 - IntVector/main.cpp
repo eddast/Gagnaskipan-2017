@@ -50,28 +50,30 @@ int main()
 
     cout << "After popping elements from first vector:" << endl;
     cout << v1 << endl;
-    //Should contain 10-49
+    //Should contain 0-49
 
-    /*
-    IntVector v3(v2); // Calls the copy constructor
+    IntVector v3(v2);
     cout << "Third vector:" << endl;
     cout << v3 << endl;
+    //Should contain v1 (0-9)
+
 
     cout << "Modifying second vector:" << endl;
     v2.insert(3, 1337);
     v2.remove_at(8);
     cout << v2 << endl;
+    //Should contain 0 1 2 1337 4 5 6 7 9
+
 
     IntVector v4;
     v4 = v3; // Operator overloading: assignment
 
+    /*
     cout << "Fourth vector:" << endl;
     cout << v4 << endl;
-
     v4.push_back(100);
     cout << "Fourth vector:" << endl;
     cout << v4 << endl;
-
     cout << "Lets finally try to access an element not in the vector: " << endl;
     try
     {

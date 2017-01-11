@@ -95,7 +95,7 @@ void IntVector::push_back(int elem)
 // IndexOutOfRangeException.
 void IntVector::insert(int index, int elem)
 {
-    //TODO
+    array[index] = elem;
 }
 
 int IntVector::at(int index) const
@@ -139,13 +139,20 @@ bool IntVector::empty() const
         return false;
 }
 
-// Removes the element at position 'index'. All elements to the
-// right of index are shifted one position to the left.
-// If index is out of range, the function throws
-// IndexOutOfRangeException.
 void IntVector::remove_at(int index)
 {
-    //TODO
+    if (index <= count)
+    {
+        // Left shift index element and elements above by one
+        // causing index element to be "deleted"
+        for (; index < (count-1) ; index++)
+            array[index] = array[index+1];
+        // Lower count because array size now reduced by one
+        count--;
+    }
+    // Throws exception if index is out of range
+    else
+        throw new IndexOutOfRangeException;
 }
 
 int IntVector::pop_back()
@@ -153,8 +160,8 @@ int IntVector::pop_back()
     // Throws exception if vector is empty
     if (empty())
         throw new EmptyException;
-    // Else records last element, sets it to zero
-    // and reduces vectors size to size - 1. Then returns last element
+    // Else stores last element in a variable, then sets it to zero in array
+    // and reduces vectors size by one. Last element then returned
     else
     {
         int lastElem = array[count-1];

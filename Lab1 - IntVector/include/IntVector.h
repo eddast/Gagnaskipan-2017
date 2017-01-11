@@ -29,10 +29,10 @@ class IntVector
         // Checking values from vector
 		int  at(int index) const;
 		void set_value_at(int index, int elem);
-
-		// Vector featured actions
 		int  size() const;
 		bool empty() const;
+
+		// Vector featured actions
 		void push_back(int elem);
 		int  pop_back();
 		void insert(int index, int elem);
