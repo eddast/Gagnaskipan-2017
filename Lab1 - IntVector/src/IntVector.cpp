@@ -89,19 +89,18 @@ void IntVector::push_back(int elem)
     }
 }
 
-// Inserts 'elem' into the list at position 'index'. All elements to the
-// right of index are shifted one position to the right.
-// If index is out of range, the function throws
-// IndexOutOfRangeException.
 void IntVector::insert(int index, int elem)
 {
-    // Right shifts index element and all elements above by one
-    // Then sets index to elem
     if (index <= count)
     {
-        array[index] = elem;
-        //Count (vector size) increases by one
+        int temp = count;
+        // Right shifts index-th element and all elements above by one
+        for (; temp > index ; temp--)
+            array[temp] = array[temp - 1];
+        // count (vector size) increases by one
         count++;
+        // Then sets index-th element to elem
+        array[index] = elem;
     }
     // Throws exception if index is out of range
     else

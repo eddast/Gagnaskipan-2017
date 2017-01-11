@@ -64,11 +64,9 @@ int main()
     cout << v2 << endl;
     //Should contain 0 1 2 3 1337 4 5 6 7 9
 
-
     IntVector v4;
     v4 = v3;
 
-    /*
     cout << "Fourth vector:" << endl;
     cout << v4 << endl;
     v4.push_back(100);
@@ -79,11 +77,10 @@ int main()
     {
         cout << v4.at(50);
     }
-    catch (IndexOutOfRangeException)
+    catch (IndexOutOfRangeException*)
     {
         cout << "Index out of range!" << endl;
     }
-    */
 
     //additionalUnitTests();
 
