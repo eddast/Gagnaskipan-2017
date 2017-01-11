@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1483975525 source:c:\users\edda steinunn\documents\gagnaskipan\asoijf\src\set.cpp
+	"Set.h"
+
+1483975898 c:\users\edda steinunn\documents\gagnaskipan\asoijf\include\set.h
+	<iostream>
+
+1483975776 source:c:\users\edda steinunn\documents\gagnaskipan\asoijf\main.cpp
+	<iostream>
+	"Set.h"
+
+1484135715 source:c:\users\edda steinunn\documents\gagnaskipan\l1w1 adts\main.cpp
+	<iostream>
+	"Set.h"
+
+1484136288 c:\users\edda steinunn\documents\gagnaskipan\l1w1 adts\include\set.h
+	<iostream>
+
+1484135514 source:c:\users\edda steinunn\documents\gagnaskipan\l1w1 adts\src\set.cpp
+	"Set.h"
+

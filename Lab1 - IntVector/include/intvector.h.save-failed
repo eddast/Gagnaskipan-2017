@@ -1,0 +1,16 @@
+#ifndef INTVECTOR_H
+#define INTVECTOR_H
+
+
+class intvector
+{
+    public:
+        intvector();
+        virtual ~intvector();
+
+    protected:
+
+    private:
+};
+
+#endif // INTVECTOR_H

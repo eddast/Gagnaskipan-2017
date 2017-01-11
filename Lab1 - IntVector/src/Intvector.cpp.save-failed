@@ -1,0 +1,11 @@
+#include "Intvector.h"
+
+Intvector::Intvector()
+{
+    //ctor
+}
+
+Intvector::~Intvector()
+{
+    //dtor
+}

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1484154898 source:c:\users\edda steinunn\documents\gagnaskipan\lab1 - intvector\main.cpp
+	<iostream>
+	"IntVector.h"
+
+1484154849 c:\users\edda steinunn\documents\gagnaskipan\lab1 - intvector\include\intvector.h
+	<iostream>
+
+1484155217 source:c:\users\edda steinunn\documents\gagnaskipan\lab1 - intvector\src\intvector.cpp
+	<cmath>
+	"IntVector.h"
+
+1484154898 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab1 - intvector\main.cpp
+	<iostream>
+	"IntVector.h"
+
+1484154849 c:\users\edda steinunn\documents\gagnaskipan 2017\lab1 - intvector\include\intvector.h
+	<iostream>
+
+1484155217 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab1 - intvector\src\intvector.cpp
+	<cmath>
+	"IntVector.h"
+
