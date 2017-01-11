@@ -66,22 +66,22 @@ void IntVector::push_back(int elem)
     // Expands capacity if needed, then adds element to vector
     if (count == capacity)
     {
-        //Capacity doubled
+        // Capacity doubled
         capacity = capacity * 2;
-        //Current elements stored in a temporary array
+        // Current elements stored in a temporary array
         int *tempArr = new int[capacity];
         for (int i = 0; i < count; i++)
             tempArr[i] = array[i];
-        //Array deleted, then redefined
+        // Array deleted, then redefined
         delete[] array;
         array = new int[capacity];
         // Elements copied from tempArr back to array whose capacity doubled
-        for (int i = 0; i < count; i++)
-            array[i] = tempArr[i];
+        array = tempArr;
+        // Now enough capacity, adding specified element
         array[count] = elem;
         count++;
     }
-    // If count is still within capacity, the element specified is added
+    // Else if count is within capacity, the element specified is added
     else
     {
         array[count] = elem;
@@ -148,13 +148,21 @@ void IntVector::remove_at(int index)
     //TODO
 }
 
-// Removes the last element of the vector and returns it.
-// If the vector is empty, the function throws
-// EmptyException.
 int IntVector::pop_back()
 {
-    //TODO
-    return 0;
+    // Throws exception if vector is empty
+    if (empty())
+        throw new EmptyException;
+    // Else records last element, sets it to zero
+    // and reduces vectors size to size - 1. Then returns last element
+    else
+    {
+        int lastElem = array[count-1];
+        count--;
+        array[count] = 0;
+
+        return lastElem;
+    }
 }
 
 // Removes all the elements from the list

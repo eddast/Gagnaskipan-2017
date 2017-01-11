@@ -45,7 +45,9 @@ void Set::resizeArr(){
     for (int i = 0; i >= setSize; i++)  //Copy from content
         tmpArr[i] = content[i];
 
-        delete[] content;              //content "deleted"
+        delete[] content;               //content "deleted"
+        content = new int[capacity];    //then created as new with double capacity
+
         content = tmpArr;              //change content to tmpArr -> more memory
 }
 

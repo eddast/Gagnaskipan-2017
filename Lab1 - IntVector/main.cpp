@@ -10,7 +10,7 @@
 
 using namespace std;
 
-//Further "Unit testing" of code that main function lacks
+//Further "Unit testing" of code that main function appears to lack
 void additionalUnitTests();
 
 int main()
@@ -37,13 +37,12 @@ int main()
     for (int i = 0; i < 60; i++)
     {
         v1.push_back(i);
-        // Should result in an expansion of the vector
     }
 
     cout << "After adding to the first vector:" << endl;
     cout << v1 << endl;
     // Should contain 0 to 59
-    /*
+
     for(int i = 0; i < 10; i++)
     {
         v1.pop_back();
@@ -51,7 +50,9 @@ int main()
 
     cout << "After popping elements from first vector:" << endl;
     cout << v1 << endl;
+    //Should contain 10-49
 
+    /*
     IntVector v3(v2); // Calls the copy constructor
     cout << "Third vector:" << endl;
     cout << v3 << endl;
@@ -81,6 +82,7 @@ int main()
         cout << "Index out of range!" << endl;
     }
     */
+
     //additionalUnitTests();
 
     return 0;
