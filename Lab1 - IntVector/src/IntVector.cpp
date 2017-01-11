@@ -23,15 +23,15 @@ IntVector::IntVector(int size, int value)
 {
     // If size is negative an empty vector is initialized
     // Calling constructor from another constructor does not work
-    // so code is repeated from IntVector()
+    // Code is therefore repeated from IntVector()
     if (size < 0)
     {
         capacity = INITIAL_CAPACITY;
         array = new int[capacity];
         count = 0;
     }
-    // If size is 0 or positive, a new dynamic array is created with user determined
-    //size as capacity, with size copies of value as its' elements
+    // If size is above 0, a new dynamic array is created with user determined
+    // size, with size-times copies of value as its' elements
     else
     {
         capacity = INITIAL_CAPACITY;
@@ -55,7 +55,7 @@ IntVector::IntVector(const IntVector& vec)
 // A destructor
 IntVector::~IntVector()
 {
-
+    //TODO
 }
 
 // Public member functions
@@ -81,8 +81,7 @@ void IntVector::push_back(int elem)
         array[count] = elem;
         count++;
     }
-    // If count is still within capacity, element specified is added to
-    // IntVector instance and one is added count (the vector size)
+    // If count is still within capacity, the element specified is added
     else
     {
         array[count] = elem;
@@ -96,19 +95,20 @@ void IntVector::push_back(int elem)
 // IndexOutOfRangeException.
 void IntVector::insert(int index, int elem)
 {
-
+    //TODO
 }
-// Returns the element at position 'index'.
-// If index is out of range, the function throws
-// IndexOutOfRangeException.
+
 int IntVector::at(int index) const
 {
+    //Checks if index is within range,
+    //returns element at position index
     if (index <= count)
     {
         int element;
         element = array[index];
         return element;
     }
+    //Throws exception if index is out of range
     else
         throw new IndexOutOfRangeException;
 
@@ -120,7 +120,7 @@ int IntVector::at(int index) const
 // IndexOutOfRangeException.
 void IntVector::set_value_at(int index, int elem)
 {
-
+    //TODO
 }
 
 int IntVector::size() const
@@ -130,9 +130,9 @@ int IntVector::size() const
     return count;
 }
 
-// Returns true if and only if the array contains no elements.
 bool IntVector::empty() const
 {
+    //If count is 0 vector is empty and true is returned, else false
     if(count == 0)
         return true;
     else
@@ -145,7 +145,7 @@ bool IntVector::empty() const
 // IndexOutOfRangeException.
 void IntVector::remove_at(int index)
 {
-
+    //TODO
 }
 
 // Removes the last element of the vector and returns it.
@@ -153,19 +153,18 @@ void IntVector::remove_at(int index)
 // EmptyException.
 int IntVector::pop_back()
 {
-
+    //TODO
     return 0;
 }
 
 // Removes all the elements from the list
 void IntVector::clear()
 {
-
+    //TODO
 }
 
 //Overloaded operators
 
-// Overloaded = operator.
 void IntVector::operator=(const IntVector& vec)
 {
     if(capacity < vec.capacity) {
@@ -186,11 +185,10 @@ void IntVector::operator=(const IntVector& vec)
 // IndexOutOfRangeException.
 int& IntVector::operator[] (int index)
 {
-
+    //TODO
     return array[index];
 }
 
-//Overloaded << operator
 ostream& operator<< (ostream& out, const IntVector& rhs)
 {
     for(int i = 0; i < rhs.size(); i++) {
