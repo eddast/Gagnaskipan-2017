@@ -30,11 +30,16 @@ IntVector::IntVector(int size, int value)
         array = new int[capacity];
         count = 0;
     }
-    // If size is above 0, a new dynamic array is created with user determined
+    // If size is above 0 and within initial capacity, a new dynamic array is created with user determined
     // size, with size-times copies of value as its' elements
     else
     {
-        capacity = INITIAL_CAPACITY;
+        if (size <= INITIAL_CAPACITY){
+            capacity = INITIAL_CAPACITY;
+        }
+        else{
+            capacity = size;
+        }
         array = new int[capacity];
         count = size;
         for (int i = 0; i < size; i++){
@@ -75,27 +80,41 @@ void IntVector::push_back(int elem)
         for (int i = 0; i < count; i++){
                 tempArr[i] = array[i];
         }
-        // Array deleted, then redefined
+        // Array deleted, then redefined at double capacity
         delete[] array;
+        array = NULL;
         array = new int[capacity];
-        // Elements copied from tempArr back to array whose capacity doubled
         array = tempArr;
-        // Now enough capacity, adding specified element
-        array[count] = elem;
-        count++;
+        // Preventing memory leak, we throw away tempArr
+        tempArr = NULL;
+        delete[] tempArr;
     }
-    // Else if count is within capacity, the element specified is added
-    else
-    {
-        array[count] = elem;
-        count++;
-    }
+    array[count] = elem;
+    count++;
 }
 
 void IntVector::insert(int index, int elem)
 {
     if (index <= count && index >= 0)
     {
+        if (count == capacity)
+        {
+            // Capacity doubled
+            capacity = capacity * 2;
+            // Current elements stored in a temporary array
+            int *tempArr = new int[capacity];
+            for (int i = 0; i < count; i++){
+                    tempArr[i] = array[i];
+            }
+            // Array deleted, then redefined at double capacity
+            delete[] array;
+            array = NULL;
+            array = new int[capacity];
+            array = tempArr;
+            // Preventing memory leak, we throw away tempArr
+            tempArr = NULL;
+            delete[] tempArr;
+        }
         int temp = count;
         // Right shifts index-th element and all elements above by one
         for (; temp > index ; temp--){
