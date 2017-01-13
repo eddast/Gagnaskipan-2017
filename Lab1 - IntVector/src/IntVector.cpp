@@ -37,8 +37,9 @@ IntVector::IntVector(int size, int value)
         capacity = INITIAL_CAPACITY;
         array = new int[capacity];
         count = size;
-        for (int i = 0; i < size; i++)
-            array[i] = value;
+        for (int i = 0; i < size; i++){
+           array[i] = value;
+        }
     }
 }
 
@@ -55,7 +56,8 @@ IntVector::IntVector(const IntVector& vec)
 // A destructor
 IntVector::~IntVector()
 {
-    //TODO
+    delete[]array;
+    array = NULL;
 }
 
 // Public member functions
@@ -70,8 +72,9 @@ void IntVector::push_back(int elem)
         capacity = capacity * 2;
         // Current elements stored in a temporary array
         int *tempArr = new int[capacity];
-        for (int i = 0; i < count; i++)
-            tempArr[i] = array[i];
+        for (int i = 0; i < count; i++){
+                tempArr[i] = array[i];
+        }
         // Array deleted, then redefined
         delete[] array;
         array = new int[capacity];
@@ -91,45 +94,56 @@ void IntVector::push_back(int elem)
 
 void IntVector::insert(int index, int elem)
 {
-    if (index <= count)
+    if (index <= count && index >= 0)
     {
         int temp = count;
         // Right shifts index-th element and all elements above by one
-        for (; temp > index ; temp--)
+        for (; temp > index ; temp--){
             array[temp] = array[temp - 1];
+        }
         // count (vector size) increases by one
         count++;
         // Then sets index-th element to elem
         array[index] = elem;
     }
     // Throws exception if index is out of range
-    else
-        throw new IndexOutOfRangeException;
+    else {
+        throw IndexOutOfRangeException();
+    }
 }
 
 int IntVector::at(int index) const
 {
-    //Checks if index is within range,
-    //returns element at position index
-    if (index <= count)
+    // Checks if index is within range,
+    // returns element at position index
+    if (index < count && index >= 0 && !empty())
     {
         int element;
         element = array[index];
         return element;
     }
-    //Throws exception if index is out of range
+    // Throws exception if index is out of range
     else
-        throw new IndexOutOfRangeException;
+    {
+        throw IndexOutOfRangeException();
+    }
 
     return 0;
 }
 
-// Sets the value at position 'index' to 'elem'.
-// If index is out of range, the function throws
-// IndexOutOfRangeException.
 void IntVector::set_value_at(int index, int elem)
 {
-    //TODO
+    // Changes index-th element to elem
+    if (index < count && index >= 0 && !empty())
+    {
+        array[index] = elem;
+    }
+    // Throws exception if index is out of range
+    else
+    {
+        throw IndexOutOfRangeException();
+    }
+
 }
 
 int IntVector::size() const
@@ -142,39 +156,46 @@ int IntVector::size() const
 bool IntVector::empty() const
 {
     //If count is 0 vector is empty and true is returned, else false
-    if(count == 0)
+    if(count == 0){
         return true;
-    else
+    }
+    else{
         return false;
+    }
 }
 
 void IntVector::remove_at(int index)
 {
-    if (index <= count)
+    if (index < count && index >= 0 && !empty())
     {
         // Left shift index element and elements above by one
         // causing index element to be "deleted"
-        for (; index < (count-1) ; index++)
-            array[index] = array[index+1];
+        for (; index < (count-1) ; index++){
+            array[index] = array[index + 1];
+        }
         // Lower count because array size now reduced by one
         count--;
     }
     // Throws exception if index is out of range
     else
-        throw new IndexOutOfRangeException;
+    {
+        throw IndexOutOfRangeException();
+    }
 }
 
 int IntVector::pop_back()
 {
     // Throws exception if vector is empty
     if (empty())
-        throw new EmptyException;
+    {
+        throw EmptyException();
+    }
     // Else stores last element in a variable, then sets it to zero in array
     // and reduces vectors size by one. Last element then returned
     else
     {
-        int lastElem = array[count-1];
         count--;
+        int lastElem = array[count];
         array[count] = 0;
 
         return lastElem;
@@ -184,7 +205,10 @@ int IntVector::pop_back()
 // Removes all the elements from the list
 void IntVector::clear()
 {
-    //TODO
+    for (int i = 0; i < count; i++){
+        array[i] = 0;
+    }
+    count = 0;
 }
 
 //Overloaded operators
@@ -204,13 +228,18 @@ void IntVector::operator=(const IntVector& vec)
     }
 }
 
-// Returns a reference to the element at position 'index'.
-// If index is out of range, the function throws
-// IndexOutOfRangeException.
 int& IntVector::operator[] (int index)
 {
-    //TODO
-    return array[index];
+    // Returns element at index-th position
+    if (index < count && index >= 0 && !empty())
+    {
+        return array[index];
+    }
+    // Throws exception if index is out of range
+    else
+    {
+        throw IndexOutOfRangeException();
+    }
 }
 
 ostream& operator<< (ostream& out, const IntVector& rhs)

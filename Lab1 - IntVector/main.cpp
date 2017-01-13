@@ -62,43 +62,49 @@ int main()
     v2.insert(3, 1337);
     v2.remove_at(8);
     cout << v2 << endl;
-    //Should contain 0 1 2 3 1337 4 5 6 7 9
+    //Should contain 0 1 2 3 1337 4 5 6 8 9
 
     IntVector v4;
     v4 = v3;
-
     cout << "Fourth vector:" << endl;
     cout << v4 << endl;
+    // Should be v3 (0-9)
+
     v4.push_back(100);
     cout << "Fourth vector:" << endl;
     cout << v4 << endl;
+    // Should be 0-9 and then 100 as last element
+
     cout << "Lets finally try to access an element not in the vector: " << endl;
     try
     {
         cout << v4.at(50);
     }
-    catch (IndexOutOfRangeException*)
+    catch (IndexOutOfRangeException)
     {
         cout << "Index out of range!" << endl;
     }
+    // Should catch exception and display error message
 
     //additionalUnitTests();
+
 
     return 0;
 }
 
 void additionalUnitTests()
 {
-    cout << endl << "--- Additional Tests ---" << endl;
+    cout << endl << "--- POP BACK! ---" << endl;
     //Testing negative sizes, should yield empty vector
-    IntVector testvec1(-1);
-    cout << "testvec1, with negative size: " << endl;
+    IntVector testvec1(10);
+    for (int i = 0; i < testvec1.size(); i++)
+    {
+        testvec1[i] = i;
+    }
+    cout << "testvec1, 0-9: " << endl;
     cout << testvec1 << endl;
-    //Testing vector with specified value, i.e. value != 0
-    IntVector testvec2(2,4);
-    cout << "testvec2, with specified value: " << endl;
-    cout << testvec2 << endl;
-    //Testing IntVector::at function
-    cout << "Element at position 0 for testvec2 is: " << testvec2.at(0) << endl;
-    //Tests pass OK
+    cout << "count: " << testvec1.size() << endl;
+    testvec1.push_back(4);
+    cout << testvec1 << endl;
+    cout << "count: " << testvec1.size() << endl;
 }
