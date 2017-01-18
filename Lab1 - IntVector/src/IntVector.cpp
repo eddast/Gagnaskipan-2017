@@ -13,7 +13,6 @@ using namespace std;
 IntVector::IntVector()
 {
     // Empty dynamic array of initial capacity created
-    // Has no elements by default so count is set to 0
     capacity = INITIAL_CAPACITY;
     array = new int[capacity];
     count = 0;
@@ -48,6 +47,7 @@ IntVector::IntVector(int size, int value)
     }
 }
 
+// Copy constructor
 IntVector::IntVector(const IntVector& vec)
     : capacity(vec.capacity), count(vec.count)
 {
@@ -69,8 +69,7 @@ IntVector::~IntVector()
 
 void IntVector::push_back(int elem)
 {
-    // Checks if count has reached capacity limit
-    // Expands capacity if needed, then adds element to vector
+    // Expands capacity if needed if count has reached limits
     if (count == capacity)
     {
         // Capacity doubled
@@ -83,9 +82,8 @@ void IntVector::push_back(int elem)
         // Array deleted, then redefined at double capacity
         delete[] array;
         array = NULL;
-        array = new int[capacity];
         array = tempArr;
-        // Preventing memory leak, we throw away tempArr
+        // tempArr deleted
         tempArr = NULL;
         delete[] tempArr;
     }
@@ -109,24 +107,23 @@ void IntVector::insert(int index, int elem)
             // Array deleted, then redefined at double capacity
             delete[] array;
             array = NULL;
-            array = new int[capacity];
             array = tempArr;
-            // Preventing memory leak, we throw away tempArr
+            // tempArr deleted
             tempArr = NULL;
             delete[] tempArr;
         }
         int temp = count;
-        // Right shifts index-th element and all elements above by one
+        // Right shifts index-th element and elements above by one
         for (; temp > index ; temp--){
             array[temp] = array[temp - 1];
         }
-        // count (vector size) increases by one
+        // count increases,then set index-th element to elem
         count++;
-        // Then sets index-th element to elem
         array[index] = elem;
     }
     // Throws exception if index is out of range
-    else {
+    else
+    {
         throw IndexOutOfRangeException();
     }
 }
@@ -167,14 +164,13 @@ void IntVector::set_value_at(int index, int elem)
 
 int IntVector::size() const
 {
-    // Count determines how many elements have been added to vector
-    // so all we do is return the count value as size
+    // Count determines IntVector size
     return count;
 }
 
 bool IntVector::empty() const
 {
-    //If count is 0 vector is empty and true is returned, else false
+    // If count is 0 vector is empty and true is returned, else false
     if(count == 0){
         return true;
     }

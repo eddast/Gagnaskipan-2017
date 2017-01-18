@@ -3,6 +3,7 @@
  * Class: Gagnaskipan 2017
  * Solution by: Edda Steinunn/eddasr15
  * IntVector.h file
+ * (unchanged apart from rearrangements and comments)
  */
 
 #ifndef INTVECTOR_H

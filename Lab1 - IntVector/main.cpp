@@ -3,15 +3,13 @@
  * Class: Gagnaskipan 2017
  * Solution by: Edda Steinunn/eddasr15
  * Main file
+ * (unchanged apart from comments)
  */
 
 #include <iostream>
 #include "IntVector.h"
 
 using namespace std;
-
-//Further "Unit testing" of code that main function appears to lack
-void additionalUnitTests();
 
 int main()
 {
@@ -86,25 +84,6 @@ int main()
     }
     // Should catch exception and display error message
 
-    //additionalUnitTests();
-
 
     return 0;
-}
-
-void additionalUnitTests()
-{
-    cout << endl << "--- POP BACK! ---" << endl;
-    //Testing negative sizes, should yield empty vector
-    IntVector testvec1(10);
-    for (int i = 0; i < testvec1.size(); i++)
-    {
-        testvec1[i] = i;
-    }
-    cout << "testvec1, 0-9: " << endl;
-    cout << testvec1 << endl;
-    cout << "count: " << testvec1.size() << endl;
-    testvec1.push_back(4);
-    cout << testvec1 << endl;
-    cout << "count: " << testvec1.size() << endl;
 }
