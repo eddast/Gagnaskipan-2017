@@ -1,0 +1,11 @@
+#include "NodeList.h"
+
+NodeList::NodeList()
+{
+    //ctor
+}
+
+NodeList::~NodeList()
+{
+    //dtor
+}
