@@ -15,3 +15,19 @@
 1485372410 source:c:\users\edda steinunn\documents\gagnaskipan\lab2 - stringlist\src\stringlist.cpp
 	"StringList.h"
 
+1485372410 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab2 - stringlist\main.cpp
+	<iostream>
+	"StringList.h"
+	<string>
+
+1485378803 c:\users\edda steinunn\documents\gagnaskipan 2017\lab2 - stringlist\include\stringlist.h
+	<iostream>
+	<string>
+	"StringNode.h"
+
+1485372410 c:\users\edda steinunn\documents\gagnaskipan 2017\lab2 - stringlist\include\stringnode.h
+	<string>
+
+1485378803 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab2 - stringlist\src\stringlist.cpp
+	"StringList.h"
+

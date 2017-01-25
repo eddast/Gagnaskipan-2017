@@ -1,184 +1,214 @@
-/*
- *
- *
+/* Lab 2: String List
+ * Due: 29.01.17
+ * Class: Gagnaskipan 2017
+ * Solution: Edda Steinunn and Bergvin Örn
+ * StringList.cpp file
  */
+
 #include "StringList.h"
 
-//Initializes the empty list
+// Initializes empty list
 StringList::StringList()
 {
+    // Head and tail nodes created
     head = new StringNode ("", tail, NULL);
     tail = new StringNode ("", NULL, head);
+    // Curr pointer set to tail for an empty list
     curr = tail;
-    PtrSize = 0;
+    // Size is 0 and currPos set to 0 as well
+    ListSize = 0;
     currPos = 0;
 }
 
+// Deletes list completely
 StringList::~StringList()
 {
+    // Delete all nodes with values
     clear();
+
+    // Then delete head and tail nodes
     delete head;
     delete tail;
 }
 
-// Clear contents from the list, to make it empty.
-// Worst-case time complexity: Linear
+// Clears contents
  void StringList::clear()
 {
+    // No action if list is empty already
     if(!isEmpty())
     {
+        // node points to first node
         NodePtr node = head->next;
         while(node != tail)
         {
+            // De-attach head from next node to node after
             head->next = node->next;
-            //node->next->prev = head;
+            // Delete node before
             delete node;
+            // Node then becomes first node in list again
             node = head->next;
         }
-        PtrSize = 0;
+
+        // Size of list becomes 0
+        ListSize = 0;
+
+        // Head now points to tail and tail points to head
         head->next = tail;
         tail->prev = head;
+
+        // Curr set to default
         curr = tail;
+
+        // Position shifts back to 0
         currPos = 0;
     }
 }
 
-// Insert an element at the current location.
-// item: The element to be inserted
-// Worst-case time complexity: Constant
+// Inserts element at current location
 void StringList::insert(const string& item)
 {
+    // New node to be inserted created
     NodePtr node = new StringNode(item, curr, (curr->prev));
 
+    // Pointers on curr set to node
     (curr->prev)->next = node;
     curr->prev = node;
 
+    // Curr then set to node
     curr = node;
 
-    PtrSize++;
+    // Size of list increases by one after insertion
+    ListSize++;
 }
 
-// Append an element at the end of the list.
-// item: The element to be appended.
-// Worst-case time complexity: Constant
+// Appends element at end of list
 void StringList::append(const string& item)
 {
-
+    // New node stores item and points to tail and node before tail
     NodePtr node = new StringNode(item, tail, (tail->prev));
+
+    // Fixing "attachments" from node before and behind
     (tail->prev)->next = node;
     tail->prev = node;
 
-    PtrSize++;
+    // List size increases by one
+    ListSize++;
 
+    // In the end, sets curr as node if it is tail
     if(curr == tail)
     {
         curr = node;
-        //currPos = PtrSize - 1;
     }
 }
 
-// Remove and return the current element.
-// Return: the element that was removed.
-// Worst-case time complexity: Constant
-// Throws InvalidPositionException if current position is
-// behind the last element
+// Removes and returns current element.
 string StringList::remove()
 {
-    if(isEmpty() || currPos >= PtrSize)
+    // Position out of range throws exception
+    if(isEmpty() || currPos >= ListSize)
     {
         throw InvalidPositionException();
     }
     else
     {
+        // New pointer points to curr
         NodePtr ptr = curr;
+        //Curr increases by one
         curr = curr->next;
 
+        //Element to return
         string removedElem = ptr->data;
 
+        //Fixing "attachments" around removed node
         ptr->next->prev = ptr->prev;
         ptr->prev->next = ptr->next;
 
+        // Temporary pointer deleted and list decreases
         delete ptr;
-        PtrSize--;
+        ListSize--;
 
         return removedElem;
     }
 }
 
-// Set the current position to the start of the list
-// Worst-case time complexity: Constant
+// Sets current position at start of list
 void StringList::move_to_start()
 {
+    // Actions made only if list is not empty
     if(!isEmpty())
     {
+        // Current set to first node
+        // current position set to 0
         curr = head->next;
         currPos = 0;
     }
 }
 
-// Set the current position to the end of the list
-// Worst-case time complexity: Constant
+// Sets current position at end of list
 void StringList::move_to_end()
 {
+    // Action only if list is not empty
     if(!isEmpty())
     {
+        // Curr set to tail
+        // Current position set to list size (tail)
         curr = tail;
-        currPos = PtrSize;
+        currPos = ListSize;
     }
 }
 
-// Move the current position one step left. No change
-// if already at beginning.
-// Worst-case time complexity: Constant
+// Moves the current position left
 void StringList::prev()
 {
+    // Must stay in scope
     if (curr->prev != head)
     {
+        // Curr set to previous node
+        // Current position decreases by one
         curr = curr->prev;
         currPos--;
     }
 }
 
-// Move the current position one step right. No change
-// if already at end.
-// Worst-case time complexity: Constant
+// Moves the current position right
 void StringList::next()
 {
+    // Curr cannot be tail
     if (curr != tail)
     {
+        // Curr points to next node
+        // Current position increases by one
         curr = curr->next;
         currPos++;
     }
 }
 
-// Return: The number of elements in the list.
-// Worst-case time complexity: Constant
+// Returns number of elements in list.
 int StringList::length() const
 {
-    return PtrSize;
+    return ListSize;
 }
 
-// Return: The position of the current element.
-// Worst-case time complexity: Constant
+// Returns position of current element.
 int StringList::curr_pos() const
 {
     return currPos;
 }
 
-// Set current position.
-// pos: The position to make current.
-// Worst-case time complexity: Linear
-// Throws InvalidPositionException if 'pos' is not a valid position
+// Sets current position
 void StringList::move_to_pos(int pos)
 {
-    if(pos > PtrSize || pos < 0)
+    // Need to stay in scope of list
+    if(pos > ListSize || pos < 0)
     {
         throw InvalidPositionException();
     }
     else
     {
+        // Curr set to first node
         curr = head->next;
         currPos = pos;
+        // Iterate to position, placing curr pointer there
         for (int i = 0; i < currPos; i++)
         {
             curr = curr->next;
@@ -186,13 +216,11 @@ void StringList::move_to_pos(int pos)
     }
 }
 
-// Return: The current element.
-// Worst-case time complexity: Constant
-// Throws InvalidPositionException if current position is
-// behind the last element
+// Returns current element.
  const string& StringList::get_value() const
 {
-    if(currPos >= PtrSize)
+    // Need to stay in scope
+    if(currPos >= ListSize)
     {
         throw InvalidPositionException();
     }
@@ -203,13 +231,13 @@ void StringList::move_to_pos(int pos)
 }
 
 
-// Outputs the elements of 'lis' to the stream 'outs', separated
-// by a single space.
+// Outputs elements of list
 ostream& operator <<(ostream& outs, const StringList& lis)
 {
+    // New node as first node
     NodePtr node = lis.head->next;
-    // While list "lasts"
     while(node != lis.tail){
+        // Outputs data of nodes while iterating through list
         outs << node->data;
         if (node->next != lis.tail)
         {
@@ -220,8 +248,9 @@ ostream& operator <<(ostream& outs, const StringList& lis)
     return outs;
 }
 
+// Simple bool check if size is 0 - list is empty
 bool StringList::isEmpty()
 {
-    return PtrSize == 0;
+    return ListSize == 0;
 }
 

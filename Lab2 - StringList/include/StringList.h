@@ -1,3 +1,10 @@
+/* Lab 2: String List
+ * Due: 29.01.17
+ * Class: Gagnaskipan 2017
+ * Solution: Edda Steinunn and Bergvin Örn
+ * StringList.h file
+ */
+
 #ifndef STRING_LIST_H
 #define STRING_LIST_H
 
@@ -80,11 +87,16 @@ class StringList {
         friend ostream& operator <<(ostream& outs, const StringList& lis);
 
     private:
+        // Need head, tail and curr pointers
         NodePtr head;
         NodePtr tail;
         NodePtr curr;
-        int PtrSize;
+
+        // Size of list and current position
+        int ListSize;
         int currPos;
+
+        //Check if list is empty (apart from head and tail node)
         bool isEmpty();
 };
 
