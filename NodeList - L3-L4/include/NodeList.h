@@ -14,6 +14,7 @@
 
 using namespace std;
 
+class EmptyException{};
 
 class NodeList
 {
@@ -24,16 +25,26 @@ class NodeList
         void headInsert(int n);
         void tailInsert(int n);
 
+        int peekHead() const;
+        int peekTail() const;
+
+        void headRemove();
+        void tailRemove();
+
+        bool isEmpty() const;
+
         friend ostream& operator <<(ostream& out, const NodeList& list);
 
         // This for some reason needed to be public
         // Is however private in lecture
         Node *head;
+        Node *tail;
 
 
     protected:
 
     private:
+        void checkEmpty() const;
 };
 
 #endif // NODELIST_H

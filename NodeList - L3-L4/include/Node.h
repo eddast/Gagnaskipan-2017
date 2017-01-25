@@ -17,12 +17,10 @@ using namespace std;
 class Node
 {
     public:
-        Node(int value, Node *next);
-        virtual ~Node();
+        Node(int value, Node *next){this->next = next; this->value = value;}
         int value;
         Node *next;
-
-        friend ostream& operator <<(ostream& outs, const Node& node);
+        Node *prev;
 
     private:
 
