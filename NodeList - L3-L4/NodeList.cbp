@@ -34,10 +34,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Game.h" />
 		<Unit filename="include/Node.h" />
 		<Unit filename="include/NodeList.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Node.cpp" />
+		<Unit filename="src/Game.cpp" />
 		<Unit filename="src/NodeList.cpp" />
 		<Extensions>
 			<code_completion />

@@ -9,20 +9,30 @@
 1485261282 source:c:\users\edda steinunn\documents\gagnaskipan\nodelist\src\node.cpp
 	"Node.h"
 
-1485307629 source:c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\main.cpp
+1485344365 source:c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\main.cpp
 	<iostream>
 	"NodeList.h"
 
-1485304545 c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\include\node.h
+1485344179 c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\include\node.h
 	<iostream>
+	"Game.h"
 
 1485261994 source:c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\src\node.cpp
 	"Node.h"
 
-1485306935 source:c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\src\nodelist.cpp
+1485345150 source:c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\src\nodelist.cpp
 	"NodeList.h"
 
-1485307650 c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\include\nodelist.h
+1485345115 c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\include\nodelist.h
 	"Node.h"
 	<iostream>
+	"Game.h"
+
+1485345048 c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\include\game.h
+	<string>
+
+1485345170 source:c:\users\edda steinunn\documents\gagnaskipan 2017\nodelist - l3-l4\src\game.cpp
+	"Game.h"
+	<string>
+	<ostream>
 

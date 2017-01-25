@@ -14,8 +14,8 @@ using namespace std;
 NodeList::NodeList()
 {
     // Initializes empty list
-    head = new Node (0, NULL, NULL);
-    tail = new Node (0, NULL, head);
+    head = new Node (Game(), NULL, NULL);
+    tail = new Node (Game(), NULL, head);
     head->next = tail;
     curr = tail;
     size = 0;
@@ -35,42 +35,9 @@ NodeList::~NodeList()
     head = NULL;
     tail = NULL;
 }
-/*
-void NodeList::headInsert(int n){
 
-    // New node points to first node in list (next is value head points to)
-    Node *node = new Node(n, head, NULL);
-    if(head == NULL)
-    {
-        // If head is NULL, empty list, tail and head point
-        // both to node
-        tail = node;
-    }
-    // Head now points to node - node added!
-    else
-    {
-        head->prev = node;
-    }
-    head = node;
-}
-
-void NodeList::tailInsert(int n){
-    // Special case: empty list's head points to new node
-    if(head == NULL){
-        headInsert(n);
-        return;
-    }
-    // New node with next as null and prev as tail
-    Node *node = new Node(n, NULL, tail);
-    // Tail->next set as node
-    tail->next = node;
-    // Tail now moved to node
-    tail = node;
-}
-*/
-
-void NodeList::insert(int n){
-    Node *node = new Node (n, curr, curr->prev);
+void NodeList::insert(Game){
+    Node *node = new Node (Game(), curr, curr->prev);
 
     curr->prev->next = node;
     curr->prev = node;
@@ -78,20 +45,26 @@ void NodeList::insert(int n){
     size++;
     currPos++;
 }
-void NodeList::remove(int n)
+void NodeList::remove()
 {   if(currPos == size)
     {
     return;
     }
 
     Node *node = curr;
+    // Cut the connection betwee    // Cut the connection between curr+1 to curr
+    // Now it points to curr-1n curr+1 to curr
+    // Now it points to curr-1 as prev
     curr->prev->next = curr->next;
+    // Cut the connection between curr-1 to curr
+    // Now it points to curr+1 as next
     curr->next->prev = curr->prev;
     curr = curr->next;
 
-    size--;
+    delete curr;
+    curr = node;
 
-    delete node;
+    size--;
 }
 
 void NodeList::moveToPrevious()
@@ -112,18 +85,18 @@ void NodeList::moveToNext()
     }
 }
 
-int NodeList::peekHead() const
+Game NodeList::peekHead() const
 {
     checkEmpty();
 
-    return head->value;
+    return head->game;
 }
 
-int NodeList::peekTail() const
+Game NodeList::peekTail() const
 {
     checkEmpty();
 
-    return tail->value;
+    return tail->game;
 }
 
 bool NodeList::isEmpty() const
@@ -175,8 +148,8 @@ ostream& operator <<(ostream& out, const NodeList& list){
 
     // While list "lasts"
     while(node->next != NULL){
-        out << node->value;
-        if (node->next != NULL)
+        out << node->game;
+        if (node->next != list.tail)
         {
             out << ", ";
         }

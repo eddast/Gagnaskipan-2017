@@ -27,6 +27,7 @@ int main()
     {
         cout << "List is empty, no head node." << endl;
     }
+
    /* // Testing Head Insert - Stacking
     nodeList.headInsert(1);
     nodeList.headInsert(2);
@@ -77,19 +78,19 @@ int main()
     catch(EmptyException){
         cout << "List empty!" << endl;
     }*/
-    nodeList.insert(1);
+    nodeList.insert(Game(01, "League Match 1", 0.3, 3.75));
     cout << "list: " << nodeList << endl;
-    nodeList.insert(2);
+    nodeList.insert(Game(02, "League Match 2", 0.3, 3.75));
     cout << "list: " << nodeList << endl;
-    nodeList.insert(3);
+    nodeList.insert(Game(03, "League Match 3", 0.3, 3.75));
     cout << "list: " << nodeList << endl;
-    nodeList.insert(4);
+    nodeList.insert(Game(04, "League Match 4", 0.3, 3.75));
     cout << "list: " << nodeList << endl;
-    nodeList.insert(5);
+    nodeList.insert(Game(05, "League Match 5", 0.3, 3.75));
     cout << "list: " << nodeList << endl;
     nodeList.moveToPrevious();
     nodeList.moveToPrevious();
-    nodeList.insert(11);
+    nodeList.insert(Game(11, "League Match 11", 0.3, 3.75));
     cout << "list: " << nodeList << endl;
 
     return 0;

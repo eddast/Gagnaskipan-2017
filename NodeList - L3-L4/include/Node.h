@@ -11,6 +11,7 @@
 #define NODE_H
 
 #include <iostream>
+#include "Game.h"
 
 using namespace std;
 
@@ -18,8 +19,11 @@ using namespace std;
 class Node
 {
     public:
-        Node(int value, Node *next, Node *prev){this->next = next; this->prev = prev; this->value = value;}
-        int value;
+        // Constructs a single node with corresponding values
+        Node(Game game, Node *next, Node *prev){this->game = game; this->next = next; this->prev = prev;}
+
+        Game game;
+        // Pointers
         Node *next;
         Node *prev;
 

@@ -11,6 +11,7 @@
 #define NODELIST_H
 #include "Node.h"
 #include <iostream>
+#include "Game.h"
 
 using namespace std;
 
@@ -27,14 +28,14 @@ class NodeList
         // Inserts node to list with value n
         //void headInsert(int n);
         //void tailInsert(int n);
-        void insert(int n);
-        void remove(int n);
+        void insert(Game Game);
+        void remove();
         void moveToPrevious();
         void moveToNext();
 
         // Returns value of head/tail, makes no changes to list
-        int peekHead() const;
-        int peekTail() const;
+        Game peekHead() const;
+        Game peekTail() const;
 
         // Removes first/last node
         void headRemove();
