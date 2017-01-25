@@ -14,10 +14,11 @@
 
 using namespace std;
 
+// The ADT for node
 class Node
 {
     public:
-        Node(int value, Node *next){this->next = next; this->value = value;}
+        Node(int value, Node *next, Node *prev){this->next = next; this->prev = prev; this->value = value;}
         int value;
         Node *next;
         Node *prev;

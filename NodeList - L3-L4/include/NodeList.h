@@ -16,35 +16,47 @@ using namespace std;
 
 class EmptyException{};
 
+// Actions for the node ADT (functions)
+// Constucts lists
 class NodeList
 {
     public:
         NodeList();
         virtual ~NodeList();
 
-        void headInsert(int n);
-        void tailInsert(int n);
+        // Inserts node to list with value n
+        //void headInsert(int n);
+        //void tailInsert(int n);
+        void insert(int n);
+        void remove(int n);
+        void moveToPrevious();
+        void moveToNext();
 
+        // Returns value of head/tail, makes no changes to list
         int peekHead() const;
         int peekTail() const;
 
+        // Removes first/last node
         void headRemove();
         void tailRemove();
 
+        // True if list is empty
         bool isEmpty() const;
 
+        // Overriding << operator
         friend ostream& operator <<(ostream& out, const NodeList& list);
 
         // This for some reason needed to be public
         // Is however private in lecture
         Node *head;
         Node *tail;
-
-
-    protected:
+        Node *curr;
 
     private:
+        // Results in exception if list is empty
         void checkEmpty() const;
+        int size;
+        int currPos;
 };
 
 #endif // NODELIST_H

@@ -16,6 +16,8 @@ int main()
 {
     // TESTING NodeList
     NodeList nodeList;
+
+
     // Testing empty exception
     try
     {
@@ -25,7 +27,7 @@ int main()
     {
         cout << "List is empty, no head node." << endl;
     }
-    // Head Insert - Stacking
+   /* // Testing Head Insert - Stacking
     nodeList.headInsert(1);
     nodeList.headInsert(2);
     nodeList.headInsert(3);
@@ -34,7 +36,7 @@ int main()
     cout << "list: " << nodeList << endl;
     cout << "current head: " << nodeList.peekHead() << endl;
     cout << "current tail: " << nodeList.peekTail() << endl;
-    // Tail insert - inserting last
+    // Testing Tail insert - inserting last
     nodeList.tailInsert(1);
     nodeList.tailInsert(2);
     nodeList.tailInsert(3);
@@ -45,7 +47,8 @@ int main()
     cout << "current tail: " << nodeList.peekTail() << endl;
 
     //Testing headRemove function
-    try{
+    try
+    {
         cout << "Calling headRemove" << endl;
         nodeList.headRemove();
         cout << "list: " << nodeList << endl;
@@ -60,19 +63,34 @@ int main()
     }
 
     //Testing tailRemove func
-    try{
+    try
+    {
         cout << "Calling tailRemove" << endl;
         nodeList.tailRemove();
         cout << "list: " << nodeList << endl;
-        cout << "current head: " << nodeList.peekHead() << endl;
+        cout << "current tail: " << nodeList.peekTail() << endl;
         nodeList.tailRemove();
         cout << "list: " << nodeList << endl;
-        cout << "current head: " << nodeList.peekHead() << endl;
+        cout << "current tail: " << nodeList.peekTail() << endl;
 
     }
     catch(EmptyException){
         cout << "List empty!" << endl;
-    }
+    }*/
+    nodeList.insert(1);
+    cout << "list: " << nodeList << endl;
+    nodeList.insert(2);
+    cout << "list: " << nodeList << endl;
+    nodeList.insert(3);
+    cout << "list: " << nodeList << endl;
+    nodeList.insert(4);
+    cout << "list: " << nodeList << endl;
+    nodeList.insert(5);
+    cout << "list: " << nodeList << endl;
+    nodeList.moveToPrevious();
+    nodeList.moveToPrevious();
+    nodeList.insert(11);
+    cout << "list: " << nodeList << endl;
 
     return 0;
 }
