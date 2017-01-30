@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1485789312 source:c:\users\edda steinunn\documents\gagnaskipan\templates\main.cpp
+	<iostream>
+	"Game.h"
+	"Match.h"
+	"Pair.h"
+
+1485787765 c:\users\edda steinunn\documents\gagnaskipan\templates\include\game.h
+	<iostream>
+
+1485787802 c:\users\edda steinunn\documents\gagnaskipan\templates\include\match.h
+	<iostream>
+
+1485787845 source:c:\users\edda steinunn\documents\gagnaskipan\templates\src\game.cpp
+	"Game.h"
+
+1485787832 source:c:\users\edda steinunn\documents\gagnaskipan\templates\src\match.cpp
+	"Match.h"
+
+1485789169 c:\users\edda steinunn\documents\gagnaskipan\templates\include\pair.h
+
