@@ -55,6 +55,11 @@ int main()
     gamePair.v1 = game1;
     gamePair.v2 = game2;
     cout << gamePair << endl;
+    // ADTs with templates that take in ADTs and types
+    Pair <Game, int> watchcountPair;
+    watchcountPair.v1 = game1;
+    watchcountPair.v2 = 12984738;
+    cout << watchcountPair << endl;
     // ADTs with templates that take in multiple ADTs
     Pair <Game, Match> varPair;
     varPair.v1 = game1;
