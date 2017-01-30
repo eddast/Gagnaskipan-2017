@@ -46,15 +46,20 @@ int main()
     Match match1(3, "Match of matches", 1.1, 2.2);
     printVars<Game, Match>(game1, match1);
     // ADTs that use T template class
-    Pair<int> intPair;
+    Pair<int, int> intPair;
     intPair.v1 = 1;
     intPair.v2 = 2;
     cout << intPair << endl;
     // ADTs with templates that take in ADTs
-    Pair <Game> gamePair;
+    Pair <Game, Game> gamePair;
     gamePair.v1 = game1;
     gamePair.v2 = game2;
     cout << gamePair << endl;
+    // ADTs with templates that take in multiple ADTs
+    Pair <Game, Match> varPair;
+    varPair.v1 = game1;
+    varPair.v2 = match1;
+    cout << varPair << endl;
 
 
     return 0;

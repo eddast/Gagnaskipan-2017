@@ -1,15 +1,15 @@
 #ifndef PAIR_H
 #define PAIR_H
 
-template <class P>
+template <class P1, class P2>
 class Pair
 {
     public:
         Pair() {};
         virtual ~Pair() {};
 
-        P v1;
-        P v2;
+        P1 v1;
+        P2 v2;
 
         friend ostream& operator <<(ostream& out, const Pair& p)
         {
