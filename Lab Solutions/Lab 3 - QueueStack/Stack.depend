@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1486564082 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stack\lab 3 - queue\main.cpp
+	<iostream>
+	"stack.h"
+	"queue.h"
+
+1486563497 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stack\lab 3 - queue\include\stack.h
+	<iostream>
+	"linkedlist.h"
+	<string>
+
+1486564045 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stack\lab 3 - queue\include\linkedlist.h
+	<string>
+	<iostream>
+
+1486563497 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stack\lab 3 - queue\include\queue.h
+	<iostream>
+	"linkedlist.h"
+	<string>
+
+1486561411 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stack\lab 3 - queue\src\linkedlist.cpp
+
+1486564082 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab 3 - queuestack\main.cpp
+	<iostream>
+	"stack.h"
+	"queue.h"
+
+1486564913 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab 3 - queuestack\include\stack.h
+	<iostream>
+	"linkedlist.h"
+	<string>
+
+1486566163 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab 3 - queuestack\include\linkedlist.h
+	<string>
+	<iostream>
+
+1486564913 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab 3 - queuestack\include\queue.h
+	<iostream>
+	"linkedlist.h"
+	<string>
+
