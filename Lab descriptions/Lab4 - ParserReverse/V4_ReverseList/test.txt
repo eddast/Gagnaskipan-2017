@@ -1,0 +1,51 @@
+new
+push_front 714
+push_front -562
+push_front -180
+reverse
+push_front 832
+push_front 32
+reverse
+push_front 815
+reverse
+push_front -912
+reverse
+reverse
+reverse
+push_front -537
+push_front -896
+push_front 474
+reverse
+reverse
+push_front -469
+reverse
+push_front 387
+push_front -346
+reverse
+new
+reverse
+push_front 714
+reverse
+push_front -562
+reverse
+push_front -180
+push_front 832
+push_front 32
+reverse
+reverse
+push_front 815
+reverse
+push_front -912
+reverse
+reverse
+reverse
+push_front -537
+push_front -896
+push_front 474
+reverse
+reverse
+push_front -469
+reverse
+push_front 387
+push_front -346
+reverse
