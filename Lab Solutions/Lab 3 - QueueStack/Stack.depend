@@ -39,3 +39,22 @@
 	"linkedlist.h"
 	<string>
 
+1486678422 source:c:\users\edda steinunn\documents\lab 3 - queuestack\main.cpp
+	<iostream>
+	"stack.h"
+	"queue.h"
+
+1486679157 c:\users\edda steinunn\documents\lab 3 - queuestack\include\stack.h
+	<iostream>
+	"linkedlist.h"
+	<string>
+
+1486679163 c:\users\edda steinunn\documents\lab 3 - queuestack\include\linkedlist.h
+	<string>
+	<iostream>
+
+1486679853 c:\users\edda steinunn\documents\lab 3 - queuestack\include\queue.h
+	<iostream>
+	"linkedlist.h"
+	<string>
+

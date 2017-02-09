@@ -13,10 +13,14 @@ class Stack
         Stack(){}
         virtual ~Stack(){}
 
+        // FIFO: Inserts at front, removes first element
         void push(T value){sta.headInsert(value); }
         T pop(){return sta.headRemove(); }
+
         friend ostream& operator <<(ostream& outs, Stack<T>& lis){outs << lis.sta; return outs; }
+
     private:
+        // "Stack" instance of the LinkedList implementation
         LinkedList<T> sta;
 };
 

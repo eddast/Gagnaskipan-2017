@@ -396,8 +396,8 @@ void intQueueTest() {
         cout << "Caught EmptyException" << endl;
     }
 }
-//*/
-//*/
+/*/
+/*/
 void doubleQueueTest() {
 
 
@@ -489,8 +489,8 @@ void doubleQueueTest() {
         cout << "Caught EmptyException" << endl;
     }
 }
-//*/
-//*/
+/*/
+/*/
 void stringQueueTest() {
 
     cout << "\n -- new Queue --" << endl;

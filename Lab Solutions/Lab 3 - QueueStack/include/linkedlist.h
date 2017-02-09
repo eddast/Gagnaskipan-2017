@@ -25,52 +25,43 @@ template <class T>
 class LinkedList
 {
     public:
-        // Constructor
-        LinkedList()
-        {
-            // Only one node because list is singly linked
-            head = new Node<T>();
-            // Nothing in list besides head
-            size = 0;
-        }
+        // Constructor of an empty linked list
+        LinkedList() : head(NULL), tail(NULL), size(0) {}
 
         // Destructor
         virtual ~LinkedList()
         {
             // Clears nodes in list
-            clearList();
-            // Deletes head and sets to NULL
-            delete head;
+            Node<T>* tmp = head;
+            while (tmp != NULL)
+            {
+                tmp = tmp->next;
+                delete head;
+                head = tmp;
+            }
+            // preventing dangling pointers
             head = NULL;
+            tail = NULL;
         }
 
         // Inserts at back of list
         void tailInsert(T value)
         {
-            // The new node created and value assigned
-            Node<T>* newNode = new Node<T>;
-            // Fixing connections
-            newNode->data = value;
-            newNode->next = NULL;
-            // Temp created that points to head
-            Node<T>* tempNode = head;
-
-            if(!isEmpty())
+            // The new node created and value assigned, next is NULL
+            Node<T>* newNode = new Node<T>(value, NULL);
+            // If list is empty, head points to new node
+            if (size == 0)
             {
-                // Iterate to end of list
-                while (tempNode->next != NULL)
-                {
-                    tempNode = tempNode->next;
-                }
-
-                // Last element set to new node
-                tempNode->next = newNode;
+                head = newNode;
             }
-            // For an empty list, new node set besides head
+            // If list is not empty, last node points to new node
             else
             {
-                head->next = newNode;
+                tail->next = newNode;
             }
+            // And in any case, tail becomes new node
+            tail = newNode;
+
             // Size naturally increases by one
             size++;
         }
@@ -78,18 +69,21 @@ class LinkedList
         // Inserts in front of list
         void headInsert(T value)
         {
-            // New node created with value as it's data
-            Node<T>* newNode = new Node<T>;
-            newNode->data = value;
-
-            // Fixing connections
-            newNode->next = head->next;
-            head->next = newNode;
+            // New node created with value as it's data and head as next
+            Node<T>* newNode = new Node<T>(value, head);
+            // Head now points to new node
+            head = newNode;
+            // If list was empty, node is first and last so tail points to node, too
+            if(size == 0)
+            {
+                tail = newNode;
+            }
 
             // Size increased by one
             size++;
         }
 
+        // Removes first element of list
         T headRemove()
         {
             // Throws exception if list is empty
@@ -98,11 +92,11 @@ class LinkedList
             // New pointer to first node created
             // NOT initiated as  = new Node because
             // Deleted anyway in same function
-            Node<T>* tempPtr = head->next;
+            Node<T>* tempPtr = head;
             // Storing value to be removed
             T removedVal = tempPtr->data;
             // Fixing connections
-            head->next = tempPtr->next;
+            head = tempPtr->next;
             // Deleting pointer
             delete tempPtr;
             // Size decreases
@@ -111,33 +105,10 @@ class LinkedList
             return removedVal;
         }
 
-        // Clears everything from list but head node
-        void clearList()
-        {
-            // No action if list is empty already
-            if(!isEmpty())
-            {
-                // NOT initiated as "Node* node = new Node" because
-                // Deleted anyway in same function
-                Node<T>* tempPtr = head->next;
-                // While in scope of list
-                while(tempPtr != NULL)
-                {
-                    // Head->next pointer fixed and node deleted
-                    // Repeated until list is empty
-                    head->next = tempPtr->next;
-                    delete tempPtr;
-                    tempPtr = head->next;
-                }
-                // List size now 0
-                size = 0;
-            }
-        }
-
         friend ostream& operator <<(ostream& outs, LinkedList<T>& lis)
         {
             // New node as first node
-            Node<T>* node = lis.head->next;
+            Node<T>* node = lis.head;
             while(node != NULL){
                 // Outputs data of nodes while iterating through list
                 outs << node->data;
@@ -151,22 +122,15 @@ class LinkedList
         }
 
     private:
+        // Head and tail pointers, determining first and last node
         Node<T>* head;
+        Node<T>* tail;
+        // Size of list
         int size;
         // Checks if list is empty (only head node)
-        bool isEmpty()
-        {
-            return size == 0;
-        }
-
+        bool isEmpty(){return size == 0; }
         // Throws exception if list is empty
-        void checkEmpty()
-        {
-            if(isEmpty())
-            {
-                throw EmptyException();
-            }
-        }
+        void checkEmpty(){if(isEmpty()){throw EmptyException(); }}
 };
 
 #endif // LINKEDLIST_H
