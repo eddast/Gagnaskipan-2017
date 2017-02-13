@@ -1,5 +1,5 @@
 # Gagnaskipan-2017
-Codes I made from lectures and labs from class Gagnaskipan, Reykjavik University (2017).
+Codes from lectures and labs from class Gagnaskipan (Data Structures), Reykjavik University (2017-1).
 
 ## Labs:
 - Lab1: IntVector - due 19.01.17
