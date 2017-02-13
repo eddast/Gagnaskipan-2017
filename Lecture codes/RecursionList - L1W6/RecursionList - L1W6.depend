@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1487000589 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\recursionlist - l1w6\main.cpp
+	<iostream>
+	"RecList.h"
+
+1487000577 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\recursionlist - l1w6\include\reclist.h
+	<cstddef>
+	<iostream>
+	"listnode.h"
+
+1486996510 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\recursionlist - l1w6\include\listnode.h
+
