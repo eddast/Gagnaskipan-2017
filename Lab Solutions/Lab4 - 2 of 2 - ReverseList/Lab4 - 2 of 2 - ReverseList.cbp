@@ -13,6 +13,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="C:/Users/Edda Steinunn/Documents/Gagnaskipan 2017/Lab Solutions/Lab4 - 2 of 2 - ReverseList" />
+					<Add directory="C:/Users/Edda Steinunn/Documents/Gagnaskipan 2017/Lab Solutions/Lab4 - 2 of 2 - ReverseList/include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -32,6 +34,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/linkedlist.h" />
+		<Unit filename="include/listnode.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

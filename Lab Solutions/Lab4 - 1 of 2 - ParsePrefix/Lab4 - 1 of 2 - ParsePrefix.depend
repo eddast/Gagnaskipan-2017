@@ -6,7 +6,9 @@
 1486569279 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab4 - 1 of 2 - parseprefix\include\prefixparser.h
 	<iostream>
 
-1487087301 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab4 - 1 of 2 - parseprefix\src\prefixparser.cpp
+1487159250 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab4 - 1 of 2 - parseprefix\src\prefixparser.cpp
 	<iostream>
 	"prefixparser.h"
+	<string>
+	<stdlib.h>
 
