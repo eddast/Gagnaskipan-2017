@@ -69,18 +69,7 @@ class LinkedList
         // This function then calls the private function once
         // while the private function does all the actual work.
         void reverse(){
-            // Initializing two pointers that will "iterate" recursively to be swapped
-            // P1 points to first node and P2 points to second node initially
-            ListNode<T>* P1 = head;
-            ListNode<T>* P2 = head->next;
-            ListNode<T>* prev = NULL;
-            // pointer to prev initialized
-            // NULL at beginning since we begin in front of the list
-            // Node<T>* prev = NULL;
-
-            // With these values we call for the recursive function
-            // that "iterates" recursively through list and swaps values
-            reverseRecursive(P1, P2, NULL);
+           reverseRecursive(head, NULL, NULL);
         }
 
         friend ostream& operator <<(ostream& outs, const LinkedList<T> &lis) {
@@ -97,9 +86,34 @@ class LinkedList
         ListNode<T> *tail;
 
         // "Iterates" recursively through list, swapping two values at a time
-        void reverseRecursive(ListNode<T> *P1, ListNode<T> *P2, ListNode<T> *prev)
+        ListNode<T>* reverseRecursive(ListNode<T> *node, ListNode<T> *nodeprv, ListNode<T> *nodenext)
         {
+            if(head != NULL)
+            {
+                if(node == NULL)
+                {
+                    tail = head;
+                    head = nodeprv;
+                    return node;
+                }
+                if(node != NULL)
+                {
+                    nodenext = node->next;
+                }
 
+                node->next = nodeprv;
+
+                nodeprv = node;
+                node = nodenext;
+
+                return reverseRecursive(node, nodeprv, nodenext);
+            }
+            else
+            {
+                throw EmptyException();
+
+                return 0;
+            }
         }
 
 };
