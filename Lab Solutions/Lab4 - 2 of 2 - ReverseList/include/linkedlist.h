@@ -62,14 +62,13 @@ class LinkedList
             return data;
         }
 
-        // This is the public reverse function, called from the outside
-        // Note that you can make another, private, reverse function
-        // that does the actual RECURSION.  It may take a parameter
-        // and/or return a value/reference/pointer to aid the process.
-        // This function then calls the private function once
-        // while the private function does all the actual work.
+        // Only serves as an initiator of parameters
+        // and as an empty check
         void reverse(){
-           reverseRecursive(head, NULL, NULL);
+            // Exception thrown if user tries reversing an empty list
+            if (head == NULL){throw EmptyException(); }
+            // Calls function that recursively reverses list
+            else {reverseRecursive(head, NULL, NULL); }
         }
 
         friend ostream& operator <<(ostream& outs, const LinkedList<T> &lis) {
@@ -85,35 +84,31 @@ class LinkedList
         ListNode<T> *head;
         ListNode<T> *tail;
 
-        // "Iterates" recursively through list, swapping two values at a time
         ListNode<T>* reverseRecursive(ListNode<T> *node, ListNode<T> *nodeprv, ListNode<T> *nodenext)
         {
-            if(head != NULL)
+            // Base case: node returned if node has become NULL, i.e. list end is reached
+            // thus, ending the whole recursive algorithm
+            if(node == NULL)
             {
-                if(node == NULL)
-                {
-                    tail = head;
-                    head = nodeprv;
-                    return node;
-                }
-                if(node != NULL)
-                {
-                    nodenext = node->next;
-                }
-
-                node->next = nodeprv;
-
-                nodeprv = node;
-                node = nodenext;
-
-                return reverseRecursive(node, nodeprv, nodenext);
+                // Fixing head and tail
+                tail = head;
+                head = nodeprv;
+                return node;
             }
+            // If we're not ready to end loop, nodenext set
             else
             {
-                throw EmptyException();
-
-                return 0;
+                nodenext = node->next;
             }
+            // Next of node points to prev
+            node->next = nodeprv;
+
+            // previous node set to current node and node set to next node
+            // for next recursive call
+            nodeprv = node;
+            node = nodenext;
+
+            return reverseRecursive(node, nodeprv, nodenext);
         }
 
 };
