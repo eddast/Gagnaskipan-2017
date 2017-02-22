@@ -4,7 +4,7 @@
 #include "linkedlist.h"
 
 using namespace std;
-//*
+
 void intStackTest() {
 
     cout << "\n -- new Stack --" << endl;
@@ -564,7 +564,7 @@ void stringQueueTest() {
 
     delete que;
 }
-//*/
+
 
 int main() {
 

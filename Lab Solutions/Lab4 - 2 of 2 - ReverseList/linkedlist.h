@@ -31,6 +31,7 @@ class LinkedList : public Queue<T>, public Stack<T>
             tail = NULL;
         }
 
+	// Implementing the virtual stack function push
         void push(T value) {
             head = new ListNode<T>(value, head);
             if(tail == NULL) {
@@ -38,6 +39,7 @@ class LinkedList : public Queue<T>, public Stack<T>
             }
         }
 
+	// Implementing the virtual queue function add
         void add(T value) {
             if(head == NULL) {
                 push(value);
@@ -49,6 +51,7 @@ class LinkedList : public Queue<T>, public Stack<T>
             }
         }
 
+	// Implementing the virtual stack function pop
         T pop() {
             if(head == NULL) {
                 throw EmptyException();
@@ -63,10 +66,13 @@ class LinkedList : public Queue<T>, public Stack<T>
             return data;
         }
 
+	// Implementing the virtual queue function remove
+	// Only calls and returns pop since function is the same
         T remove(){
             return pop();
         }
 
+	// prints using ostream for stack and queue
         void print(ostream& outs) const{
             ListNode<T> *tmpNode = head;
             while(tmpNode != NULL) {
@@ -75,6 +81,7 @@ class LinkedList : public Queue<T>, public Stack<T>
             }
         }
 
+	// Uses print function to override the << operator
         friend ostream& operator <<(ostream& outs, const LinkedList<T> &lis) {
             lis.print(outs);
             return outs;

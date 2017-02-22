@@ -15,6 +15,7 @@
 					<Add option="-g" />
 					<Add directory="C:/Users/Edda Steinunn/Documents/Gagnaskipan 2017/Lab Solutions/Lab4 - 2 of 2 - ReverseList" />
 					<Add directory="C:/Users/Edda Steinunn/Documents/Gagnaskipan 2017/Lab Solutions/Lab4 - 2 of 2 - ReverseList/include" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +25,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -36,7 +38,9 @@
 		</Compiler>
 		<Unit filename="include/linkedlist.h" />
 		<Unit filename="include/listnode.h" />
+		<Unit filename="include/stack.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="queue.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
