@@ -14,5 +14,5 @@ Codes from lectures and labs from class Gagnaskipan (Data Structures), Reykjavik
 ## Tests:
 - Test 1:   ADTs and Doubly Linked Lists    02.02.17
 - Test 2:   Queue/Stack and Recursion       16.02.17
-- Test 3:   Inheritance and Abstraction     02.03.17
+- Test 3:   Inheritance                     02.03.17
 - Test 4:                                   16.03.17
