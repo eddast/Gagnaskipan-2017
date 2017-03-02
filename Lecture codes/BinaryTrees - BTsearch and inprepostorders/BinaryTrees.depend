@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1488419627 source:c:\users\edda steinunn\documents\Æfingar\binarytrees\main.cpp
+	<iostream>
+	"binarytree.h"
+
+1488420440 source:c:\users\edda steinunn\documents\Æfingar\binarytrees\src\binarytree.cpp
+	"binarytree.h"
+
+1488420429 c:\users\edda steinunn\documents\Æfingar\binarytrees\include\binarytree.h
+	"treenode.h"
+
+1488420576 c:\users\edda steinunn\documents\Æfingar\binarytrees\include\treenode.h
+	<iostream>
+	<string>
+
