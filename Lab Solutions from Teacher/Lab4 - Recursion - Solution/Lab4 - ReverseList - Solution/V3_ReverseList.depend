@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1465550885 source:c:\kennsla\gagnaskipan\projects\solutions\v3_reverselist\v3_reverselist\main.cpp
+	<fstream>
+	"linkedlist.h"
+
+1466037495 c:\kennsla\gagnaskipan\projects\solutions\v3_reverselist\v3_reverselist\linkedlist.h
+	<cstddef>
+	<iostream>
+	"listnode.h"
+
+1465480629 c:\kennsla\gagnaskipan\projects\solutions\v3_reverselist\v3_reverselist\listnode.h
+

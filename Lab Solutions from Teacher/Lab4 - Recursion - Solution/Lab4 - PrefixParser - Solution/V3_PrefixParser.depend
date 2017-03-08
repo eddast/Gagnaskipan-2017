@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1465384022 source:c:\kennsla\gagnaskipan\projects\solutions\v3_prefixparser\v3_prefixparser\prefixparser.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	"prefixparser.h"
+
+1465549863 source:c:\kennsla\gagnaskipan\projects\solutions\v3_prefixparser\v3_prefixparser\main.cpp
+	<fstream>
+	"prefixparser.h"
+
+1465384022 c:\kennsla\gagnaskipan\projects\solutions\v3_prefixparser\v3_prefixparser\prefixparser.h
+	<string>
+	<iostream>
+

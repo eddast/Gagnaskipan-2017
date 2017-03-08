@@ -13,3 +13,24 @@
 	<iostream>
 	<string>
 
+1488966437 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\binarytrees - btsearch and inprepostorders\main.cpp
+	<iostream>
+	"binarytree.h"
+	"bstset.h"
+
+1488420429 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\binarytrees - btsearch and inprepostorders\include\binarytree.h
+	"treenode.h"
+
+1488420576 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\binarytrees - btsearch and inprepostorders\include\treenode.h
+	<iostream>
+	<string>
+
+1488456196 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\binarytrees - btsearch and inprepostorders\src\binarytree.cpp
+	"binarytree.h"
+
+1488979151 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\binarytrees - btsearch and inprepostorders\src\bstset.cpp
+	"bstset.h"
+
+1488977360 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\binarytrees - btsearch and inprepostorders\include\bstset.h
+	"treenode.h"
+

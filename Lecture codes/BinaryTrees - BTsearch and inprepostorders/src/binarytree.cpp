@@ -14,7 +14,7 @@ BinaryTree::BinaryTree()
 void BinaryTree::findoradd(char data)
 {
     TreeNode* &node = root;
-    TreeNode* &retnode = find(node, data, 0);
+    TreeNode* &retnode = find(root, data, 0);
 
     if(retnode == NULL){
         cout << data << " not found" << endl;
