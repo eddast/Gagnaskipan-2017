@@ -179,6 +179,7 @@ NodePtr StringContactMap::getRoot()
     return root;
 }
 
+// Returns node if found publicly
 NodePtr &StringContactMap::isFound(string key)
 {
     return find(root, key);
