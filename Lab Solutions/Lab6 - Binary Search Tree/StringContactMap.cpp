@@ -141,20 +141,15 @@ void StringContactMap::free_memory(NodePtr node) {
 
 // Searches for prefix recursively
 // Pushes values that match into a vector
-// Goes left if prefix is larger than key
-// Goes right if prefix is smaller than key
+// Does so in inorder
 void StringContactMap::prefix_search(NodePtr node, string prefix, vector<Contact>& v) const {
-    if (node == NULL){
-        return;
-    }
-    if(prefix < node->key){
-        return prefix_search(node->left, prefix, v);
-    }
-    else if(prefix > node->key){
-        return prefix_search(node->right, prefix, v);
-    }
-    if(!(node->key.find(prefix))){
-        v.push_back(node->value);
+    if(node != NULL)
+    {
+        prefix_search(node->left, prefix, v);
+        if(!(node->key.find(prefix))){
+            v.push_back(node->value);
+        }
+        prefix_search(node->right, prefix, v);
     }
 }
 
