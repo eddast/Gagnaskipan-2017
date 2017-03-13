@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contact.cpp
+	"Contact.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contact.h
+	<string>
+	<iostream>
+
+1489362756 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactmanager.cpp
+	"ContactManager.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactmanager.h
+	"StringContactMap.h"
+
+1489363367 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\stringcontactmap.h
+	<iostream>
+	<string>
+	<vector>
+	"ContactNode.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactnode.h
+	<iostream>
+	<string>
+	<vector>
+	"Contact.h"
+
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactnode.cpp
+	"ContactNode.h"
+
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\interactivephonebook.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"InteractivePhoneBook.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\interactivephonebook.h
+	"ContactManager.h"
+
+1489006870 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\main.cpp
+	<iostream>
+	<vector>
+	"InteractivePhoneBook.h"
+	"StringContactMap.h"
+	"Contact.h"
+	<cstdlib>
+
+1489402830 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\stringcontactmap.cpp
+	"StringContactMap.h"
+
