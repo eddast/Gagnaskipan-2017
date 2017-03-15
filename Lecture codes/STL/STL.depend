@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1489575721 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stl\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<set>
+	"measurement.h"
+
+1489574271 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stl\src\measurement.cpp
+	"measurement.h"
+
+1489574241 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\stl\include\measurement.h
+	<string>
+
