@@ -1,0 +1,5 @@
+	Venom, score: 160
+	MJ, score: 31
+	Gobby, score: 30
+	Sandman, score: 28
+	Spidey, score: 3

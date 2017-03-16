@@ -1,0 +1,133 @@
+# depslib dependency file v1.0
+1489618674 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\main.cpp
+	<iostream>
+	"interface.h"
+
+1489620358 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\include\interface.h
+	"gameplay.h"
+
+1489629721 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\src\gameplay.cpp
+	"gameplay.h"
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	<set>
+	<algorithm>
+
+1489626859 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\include\gameplay.h
+	<string>
+	<vector>
+	<set>
+	"interface.h"
+	"highscore.h"
+	"drawhangman.h"
+
+1489625576 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\src\interface.cpp
+	"interface.h"
+	<vector>
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1489614267 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\include\highscore.h
+	<string>
+	<iostream>
+
+1489615608 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\include\drawhangman.h
+
+1489615591 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab7 - hangman\src\drawhangman.cpp
+	"drawhangman.h"
+	<iostream>
+
+1489618674 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\main.cpp
+	<iostream>
+	"interface.h"
+
+1489620358 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\include\interface.h
+	"gameplay.h"
+
+1489626859 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\include\gameplay.h
+	<string>
+	<vector>
+	<set>
+	"interface.h"
+	"highscore.h"
+	"drawhangman.h"
+
+1489614267 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\include\highscore.h
+	<string>
+	<iostream>
+
+1489615608 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\include\drawhangman.h
+
+1489615591 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\src\drawhangman.cpp
+	"drawhangman.h"
+	<iostream>
+
+1489629721 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\src\gameplay.cpp
+	"gameplay.h"
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	<set>
+	<algorithm>
+
+1489625576 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman\src\interface.cpp
+	"interface.h"
+	<vector>
+	<iostream>
+	<cstdlib>
+	<fstream>
+
+1489618674 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\main.cpp
+	<iostream>
+	"interface.h"
+
+1489620358 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\include\interface.h
+	"gameplay.h"
+
+1489626859 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\include\gameplay.h
+	<string>
+	<vector>
+	<set>
+	"interface.h"
+	"highscore.h"
+	"drawhangman.h"
+
+1489614267 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\include\highscore.h
+	<string>
+	<iostream>
+
+1489615608 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\include\drawhangman.h
+
+1489630735 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\src\drawhangman.cpp
+	"drawhangman.h"
+	<iostream>
+
+1489630735 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\src\gameplay.cpp
+	"gameplay.h"
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	<time.h>
+	<stdlib.h>
+	<string.h>
+	<set>
+	<algorithm>
+
+1489630735 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\src\interface.cpp
+	"interface.h"
+	<vector>
+	<iostream>
+	<cstdlib>
+	<fstream>
+
