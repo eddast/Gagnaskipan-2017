@@ -1,0 +1,175 @@
+# depslib dependency file v1.0
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contact.cpp
+	"Contact.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contact.h
+	<string>
+	<iostream>
+
+1489362756 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactmanager.cpp
+	"ContactManager.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactmanager.h
+	"StringContactMap.h"
+
+1489363367 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\stringcontactmap.h
+	<iostream>
+	<string>
+	<vector>
+	"ContactNode.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactnode.h
+	<iostream>
+	<string>
+	<vector>
+	"Contact.h"
+
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\contactnode.cpp
+	"ContactNode.h"
+
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\interactivephonebook.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"InteractivePhoneBook.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\interactivephonebook.h
+	"ContactManager.h"
+
+1489006870 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\main.cpp
+	<iostream>
+	<vector>
+	"InteractivePhoneBook.h"
+	"StringContactMap.h"
+	"Contact.h"
+	<cstdlib>
+
+1489402830 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\lab6 - bts\stringcontactmap.cpp
+	"StringContactMap.h"
+
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\contact.cpp
+	"Contact.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\contact.h
+	<string>
+	<iostream>
+
+1489404237 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\contactmanager.cpp
+	"ContactManager.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\contactmanager.h
+	"StringContactMap.h"
+
+1489363367 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\stringcontactmap.h
+	<iostream>
+	<string>
+	<vector>
+	"ContactNode.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\contactnode.h
+	<iostream>
+	<string>
+	<vector>
+	"Contact.h"
+
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\contactnode.cpp
+	"ContactNode.h"
+
+1488968052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\interactivephonebook.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"InteractivePhoneBook.h"
+
+1488968052 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\interactivephonebook.h
+	"ContactManager.h"
+
+1489006870 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\main.cpp
+	<iostream>
+	<vector>
+	"InteractivePhoneBook.h"
+	"StringContactMap.h"
+	"Contact.h"
+	<cstdlib>
+
+1489410052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\stringcontactmap.cpp
+	"StringContactMap.h"
+
+1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contact.cpp
+	"Contact.h"
+
+1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contact.h
+	<string>
+	<iostream>
+	<vector>
+
+1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactmanager.cpp
+	"ContactManager.h"
+	<algorithm>
+
+1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactmanager.h
+	"StringContactMap.h"
+
+1490214574 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactmap.h
+	<iostream>
+	<string>
+	<vector>
+	"ContactList.h"
+	"KeyException.h"
+	"StringContactPair.h"
+
+1490212687 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactlist.h
+	<iostream>
+	<vector>
+	"ContactNode.h"
+	"KeyException.h"
+
+1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactnode.h
+	<string>
+	<vector>
+	"Contact.h"
+	"StringContactPair.h"
+
+1490190281 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactpair.h
+	<string>
+	"Contact.h"
+
+1490190281 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\keyexception.h
+
+1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactnode.cpp
+	"ContactNode.h"
+
+1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\interactivephonebook.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"InteractivePhoneBook.h"
+
+1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\interactivephonebook.h
+	"ContactManager.h"
+
+1490204420 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\main.cpp
+	<iostream>
+	"InteractivePhoneBook.h"
+
+1490213844 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactmap.cpp
+	"StringContactMap.h"
+	"Hash.h"
+	<algorithm>
+
+1490214486 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\hash.h
+	"StringContactMap.h"
+	<string>
+
+1490190281 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactpair.cpp
+	"ContactNode.h"
+
+1490194005 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\src\contactlist.cpp
+
+1490214722 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\hash.cpp
+	"Hash.h"
+
+1490213586 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactlist.cpp
+	"ContactList.h"
+	<iostream>
+
