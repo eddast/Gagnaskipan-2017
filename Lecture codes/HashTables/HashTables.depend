@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1490187013 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\hashtables\main.cpp
+	<iostream>
+	<random>
+	<ctime>
+	"hashtable.h"
+
+1490186441 c:\users\edda steinunn\documents\gagnaskipan 2017\lecture codes\hashtables\include\hashtable.h
+	<list>
+	<functional>
+

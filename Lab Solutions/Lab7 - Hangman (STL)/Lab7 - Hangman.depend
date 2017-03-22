@@ -91,7 +91,7 @@
 	<iostream>
 	"interface.h"
 
-1489620358 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\include\interface.h
+1489772415 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\include\interface.h
 	"gameplay.h"
 
 1489626859 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\include\gameplay.h
@@ -112,7 +112,7 @@
 	"drawhangman.h"
 	<iostream>
 
-1489630735 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\src\gameplay.cpp
+1489772434 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab7 - hangman (stl)\src\gameplay.cpp
 	"gameplay.h"
 	<iostream>
 	<vector>

@@ -188,7 +188,9 @@ void Gameplay::lost_state(){
 void Gameplay::won_state(){
     Interface interface;
     highscore = get_high_score();
-    int lowest_high_score = get_lowest_high_score();
+    int lowest_high_score;
+    if(highscore.empty()){lowest_high_score = 0; }
+    else{lowest_high_score = get_lowest_high_score(); }
 
     is_won = true;
     gamescore = (20 - (initial_lives - lives)) * (10 - (initial_lives + 1));
@@ -256,7 +258,10 @@ void Gameplay::update_high_score(multiset<HighScore> &highscore, int score, stri
     highscore.insert(h);
     multiset<HighScore>::iterator i = highscore.end();
     i--;
-    highscore.erase(i);
+    if(highscore.size() > 5)
+    {
+        highscore.erase(i);
+    }
     ofstream fileout("highscores.txt");
     for(multiset<HighScore>::iterator it = highscore.begin(); it != highscore.end(); it++){
         fileout << *it << endl;
