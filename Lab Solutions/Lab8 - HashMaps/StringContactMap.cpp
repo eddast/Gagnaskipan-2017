@@ -8,12 +8,11 @@ StringContactMap::StringContactMap(int initial_capacity)
 {
     // Capacity set to initial capacity and map created
     // Count is zero since map contains no elements
-    // Initialize all "buckets" with empty ContactLists
+    // Initialize all "buckets" with NULL initially
     capacity = initial_capacity;
     map = new ListPtr[capacity];
     for(int i = 0; i < capacity; i++)
     {
-        // Setting all elements to NULL
         map[i] = NULL;
     }
     count = 0;
@@ -39,7 +38,7 @@ void StringContactMap::rebuild()
     // Vector created containing all values of map
     vector<StringContactPair> tmp_vec = all_contacts();
 
-    // Hash map and all elements in it deleted
+    // Current hash map and all elements in it deleted
     delete_map();
 
     // Map redefined, now with double capacity
@@ -51,7 +50,7 @@ void StringContactMap::rebuild()
         map[i] = NULL;
     }
 
-    // Elements passed back into map after resizing and emptying it
+    // Elements passed back into map after deleting and resizing it
     for(unsigned int i = 0; i < tmp_vec.size(); i++){
         add(tmp_vec[i].key, tmp_vec[i].value);
     }
@@ -65,8 +64,8 @@ int StringContactMap::size() const
 
 bool StringContactMap::empty() const
 {
-    // If map is empty count is 0, meaning this will
-    // return statement will yield false, otherwise true
+    // If map is empty count is 0, meaning return statement will
+    // yield false if empty, true otherwise
     return count == 0;
 }
 
@@ -164,7 +163,31 @@ Contact StringContactMap::get(string key)
 
 vector<Contact> StringContactMap::prefix_search(string prefix) const
 {
-    return vector <Contact>();
+    // Vector to store values with prefix
+    vector<StringContactPair> contacts;
+
+    // Pushing to vector values from every list that matches prefix
+    for(int i = 0; i < capacity; i++)
+    {
+        if(map[i] != NULL)
+        {
+            map[i]->get_contacts_by_key_prefix(prefix, contacts);
+        }
+    }
+
+    // Sort by key in increasing order
+    sort(contacts.begin(), contacts.end());
+
+    // After using the <StringContactPair> vector for sorting, values are placed
+    // in vector<contact> type of vector for Contact manager to remain unchanged
+    // then we return the contact vector
+    vector<Contact> contact_vec;
+    for(unsigned int i = 0; i < contacts.size(); i++)
+    {
+        contact_vec.push_back(contacts[i].value);
+    }
+
+    return contact_vec;
 }
 
 int StringContactMap::hash_key(string key)
@@ -176,7 +199,7 @@ int StringContactMap::hash_key(string key)
 
 void StringContactMap::delete_map()
 {
-    // Deletes all the ContactLists in map inputted
+    // Deletes all non-NULL ContactLists in map
     // Then deletes map itself
     for (int i = 0; i < capacity; i++)
     {

@@ -174,26 +174,21 @@ void ContactList::add_to_vector(vector<StringContactPair>& contacts)
 
 void ContactList::get_contacts_by_key_prefix(string prefix, vector<StringContactPair>& contacts)
 {
-    // Calls for a recursive helper function
-    prefix_search(head, prefix, contacts);
-}
-
-void ContactList::prefix_search(NodePtr node, string prefix, vector<StringContactPair>& contacts) {
-    if(node->link != NULL)
+    // Iterates through list, pushing to vector if prefix matches key
+    NodePtr iternode = head;
+    while(iternode != NULL)
     {
-        // Searches for prefix recursively
-        // Pushes values that match into a vector
-        prefix_search(node->link, prefix, contacts);
-        if(!(node->data.key.find(prefix)))
+        if(!(iternode->data.key.find(prefix)))
         {
-            contacts.push_back(node->data);
+            contacts.push_back(iternode->data);
         }
+        iternode = iternode->link;
     }
 }
 
 vector<StringContactPair> ContactList::to_vector()
 {
-    // returns vector of contacts
+    // returns vector of contacts in list
     vector<StringContactPair> contacts;
     add_to_vector(contacts);
     return contacts;
@@ -201,6 +196,7 @@ vector<StringContactPair> ContactList::to_vector()
 
 bool ContactList::empty()
 {
+    // If list is empty, head is NULL
     return head == NULL;
 }
 

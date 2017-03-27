@@ -3,17 +3,12 @@
 
 void ContactManager::add(Contact contact)
 {
-    cout << "Checking if phone exists..." << endl;
     if(phone_map.contains(contact.phone)) {
         throw DuplicatePhoneException();
     }
-    cout << "Checking if name exists..." << endl;
-    cout << "Checking done!" << endl;
     if(name_map.contains(contact.name)) {
         throw DuplicateNameException();
     }
-    cout << "Checking done!" << endl;
-    cout << "NOW adding..." << endl;
     phone_map.add(contact.phone, contact);
     name_map.add(contact.name, contact);
 }

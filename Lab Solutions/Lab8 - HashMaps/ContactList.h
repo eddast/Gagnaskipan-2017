@@ -57,7 +57,6 @@ class ContactList
         NodePtr head;
         // Deallocates the memory allocated for the linked list.
         void remove_all();
-        void prefix_search(NodePtr node, string prefix, vector<StringContactPair>& contacts);
 };
 
 typedef ContactList* ListPtr;
