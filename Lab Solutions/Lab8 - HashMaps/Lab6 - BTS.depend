@@ -95,22 +95,22 @@
 1489410052 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab6 - binary search tree\stringcontactmap.cpp
 	"StringContactMap.h"
 
-1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contact.cpp
+1490193880 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contact.cpp
 	"Contact.h"
 
-1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contact.h
+1490193880 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contact.h
 	<string>
 	<iostream>
 	<vector>
 
-1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactmanager.cpp
+1490374625 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactmanager.cpp
 	"ContactManager.h"
 	<algorithm>
 
-1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactmanager.h
+1490193880 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactmanager.h
 	"StringContactMap.h"
 
-1490214574 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactmap.h
+1490633631 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactmap.h
 	<iostream>
 	<string>
 	<vector>
@@ -118,58 +118,58 @@
 	"KeyException.h"
 	"StringContactPair.h"
 
-1490212687 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactlist.h
+1490221735 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactlist.h
 	<iostream>
 	<vector>
 	"ContactNode.h"
 	"KeyException.h"
 
-1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactnode.h
+1490193880 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactnode.h
 	<string>
 	<vector>
 	"Contact.h"
 	"StringContactPair.h"
 
-1490190281 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactpair.h
+1490193881 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactpair.h
 	<string>
 	"Contact.h"
 
-1490190281 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\keyexception.h
+1490193881 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\keyexception.h
 
-1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactnode.cpp
+1490193880 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactnode.cpp
 	"ContactNode.h"
 
-1490190280 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\interactivephonebook.cpp
+1490374907 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\interactivephonebook.cpp
 	<iostream>
 	<vector>
 	<fstream>
 	"InteractivePhoneBook.h"
 
-1490190280 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\interactivephonebook.h
+1490193880 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\interactivephonebook.h
 	"ContactManager.h"
 
-1490204420 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\main.cpp
+1490380533 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\main.cpp
 	<iostream>
 	"InteractivePhoneBook.h"
 
-1490213844 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactmap.cpp
+1490633102 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactmap.cpp
 	"StringContactMap.h"
 	"Hash.h"
 	<algorithm>
 
-1490214486 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\hash.h
+1490376829 c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\hash.h
 	"StringContactMap.h"
 	<string>
 
-1490190281 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactpair.cpp
+1490193881 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\stringcontactpair.cpp
 	"ContactNode.h"
 
 1490194005 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\src\contactlist.cpp
 
-1490214722 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\hash.cpp
+1490376829 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\hash.cpp
 	"Hash.h"
 
-1490213586 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactlist.cpp
+1490221695 source:c:\users\edda steinunn\documents\gagnaskipan 2017\lab solutions\lab8 - hashmaps\contactlist.cpp
 	"ContactList.h"
 	<iostream>
 

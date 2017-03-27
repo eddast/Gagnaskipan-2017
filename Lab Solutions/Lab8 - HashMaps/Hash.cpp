@@ -1,7 +1,7 @@
 #include "Hash.h"
 
 // Hashes the key into an integer
-unsigned int hash(string s)
+unsigned int hash_value(string s)
 {
     int sum = 0;
 
@@ -16,5 +16,3 @@ unsigned int hash(string s)
     // Function only hashes, does not yield correct value for map
     return sum;
 }
-
-

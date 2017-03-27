@@ -4,26 +4,19 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "ContactList.h"
-#include "KeyException.h"
-#include "StringContactPair.h"
+#include "ContactNode.h"
 
-// Default initial capacity of a StringContactMap.
-const int INITIAL_CAPACITY = 100;
-
-// Maximum load (i.e. [number of entries] / [number of buckets]) of a
-// StringContactMap.
-const double MAX_LOAD = 1.0;
+class KeyException { };
 
 class StringContactMap {
 
     public:
-        // Creates an empty map with the specified initial capacity.
-        StringContactMap(int initial_capacity = INITIAL_CAPACITY);
+        // Creates an empty map.
+        StringContactMap ();
 
         ~StringContactMap();
 
-        // Returns the number of entries in this map.
+        // Returns the number ef entries in this map.
         int size() const;
 
         // Returns true if and only if the map contains no entries.
@@ -31,7 +24,7 @@ class StringContactMap {
 
         // Returns a vector containing the contacts in this map, ordered by
         // their keys in increasing order.
-        vector<StringContactPair> all_contacts() const;
+        vector<Contact> all_contacts() const;
 
         // Adds the specified key to the map associated with the specified
         // contact.
@@ -41,11 +34,11 @@ class StringContactMap {
 
         // Returns true if and only if there exists an entry in the map with
         // the specified key.
-        bool contains(string key);
+        bool contains(string key) const;
 
         // Returns the contact associated wih the specified key.
         // Throws KeyException if no such contact exists.
-        Contact get(string key);
+        Contact get(string key) const;
 
         // Removes the entry with the specified key from the map.
         // If no entry in the map has the specified key, this operation has no
@@ -53,26 +46,32 @@ class StringContactMap {
         void remove(string key);
 
         // Returns a vector containing the contacts in this map, whose key is
-        // prefixed by 'prefix' ordered by their keys in increasing order.
+        // prefixed by 'prefix'. The contacts are ordered by their
+        // keys in increasing order,
+		// NOTE: This is for part C of the assignment.
         vector<Contact> prefix_search(string prefix) const;
 
-        // Prints the contacts of this map to the specified stream ordered by
-        // their keys in increasing order.
         friend ostream& operator <<(ostream& out, const StringContactMap& map);
 
     private:
-        ListPtr* map;
-        int capacity;
-        int count;
+        NodePtr root;
+        NodePtr& find(NodePtr& node, string key) const;
+        int size(NodePtr node) const;
+        NodePtr& minContact(NodePtr& node);
+        void remove(NodePtr& node, string key);
+        Contact get(NodePtr node, string key) const;
+        bool contains(NodePtr node, string key) const;
+        void add(NodePtr& r, string key, Contact value);
+        vector<Contact> all_contacts(NodePtr node) const;
+        // Deallocates all memory allocated for the specified tree.
+        void free_memory(NodePtr node);
 
-        // Adds all StringContactPairs contained in the map to the specified vector
-        void all_contacts(vector<StringContactPair>& contacts) const;
-
-        int hash_key(string key);
-        void delete_map();
-        void load_check();
-        void rebuild();
+        // Optoional helper function
+        // Adds the the Contacts in the specified tree, whose key is prefixed
+        // by 'prefix', to the vector v. The contacts are ordered by their keys
+        // in increasing order.
+		// NOTE: This is for part C of the assignment.
+        void prefix_search(NodePtr node, string prefix, vector<Contact>& v) const;
 };
 
 #endif
-

@@ -199,6 +199,11 @@ vector<StringContactPair> ContactList::to_vector()
     return contacts;
 }
 
+bool ContactList::empty()
+{
+    return head == NULL;
+}
+
 ostream& operator <<(ostream& outs, const ContactList& lis)
 {
     // Prints list by iterating through it

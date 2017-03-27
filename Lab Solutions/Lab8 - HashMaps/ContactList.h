@@ -44,6 +44,9 @@ class ContactList
         // Returns a vector containing the StringContactPairs of this list.
         vector<StringContactPair> to_vector();
 
+        // Helper: returns true if list is empty
+        bool empty();
+
         // Prints the contacts (i.e., the value of each pair) of this list to
         // the specified output stream. A newline should be printed after each
         // contact.

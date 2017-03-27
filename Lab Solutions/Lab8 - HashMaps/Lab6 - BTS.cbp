@@ -35,18 +35,25 @@
 		</Compiler>
 		<Unit filename="Contact.cpp" />
 		<Unit filename="Contact.h" />
+		<Unit filename="ContactList.cpp" />
+		<Unit filename="ContactList.h" />
 		<Unit filename="ContactManager.cpp" />
 		<Unit filename="ContactManager.h" />
 		<Unit filename="ContactNode.cpp" />
 		<Unit filename="ContactNode.h" />
+		<Unit filename="Hash.cpp" />
+		<Unit filename="Hash.h" />
 		<Unit filename="InteractivePhoneBook.cpp" />
 		<Unit filename="InteractivePhoneBook.h" />
+		<Unit filename="KeyException.h" />
 		<Unit filename="Lab6 - BTS.cbp" />
 		<Unit filename="Lab6 - BTS.depend" />
 		<Unit filename="Lab6 - BTS.layout" />
 		<Unit filename="Makefile" />
 		<Unit filename="StringContactMap.cpp" />
 		<Unit filename="StringContactMap.h" />
+		<Unit filename="StringContactPair.cpp" />
+		<Unit filename="StringContactPair.h" />
 		<Unit filename="large.csv" />
 		<Unit filename="main.cpp" />
 		<Unit filename="med.csv" />

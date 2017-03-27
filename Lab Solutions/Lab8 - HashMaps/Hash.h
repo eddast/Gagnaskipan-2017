@@ -5,6 +5,6 @@
 
 using namespace std;
 
-unsigned int hash(string s);
+unsigned int hash_value(string s);
 
 #endif
