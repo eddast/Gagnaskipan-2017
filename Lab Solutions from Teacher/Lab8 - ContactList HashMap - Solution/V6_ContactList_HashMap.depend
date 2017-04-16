@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1426692268 source:c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\contact.cpp
+	"Contact.h"
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\contact.h
+	<string>
+	<iostream>
+	<vector>
+
+1426692268 source:c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\contactmanager.cpp
+	"ContactManager.h"
+	<algorithm>
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\contactmanager.h
+	"StringContactMap.h"
+
+1490180174 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\stringcontactmap.h
+	<iostream>
+	<string>
+	<vector>
+	"ContactList.h"
+	"KeyException.h"
+	"StringContactPair.h"
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\contactlist.h
+	<iostream>
+	<vector>
+	"ContactNode.h"
+	"KeyException.h"
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\contactnode.h
+	<string>
+	<vector>
+	"Contact.h"
+	"StringContactPair.h"
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\stringcontactpair.h
+	<string>
+	"Contact.h"
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\keyexception.h
+
+1426692268 source:c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\contactnode.cpp
+	"ContactNode.h"
+
+1426697478 source:c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\hash.cpp
+	"Hash.h"
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\hash.h
+	<string>
+
+1426692268 source:c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\interactivephonebook.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"InteractivePhoneBook.h"
+
+1426692268 c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\interactivephonebook.h
+	"ContactManager.h"
+
+1426697024 source:c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\main.cpp
+	<iostream>
+	"InteractivePhoneBook.h"
+	"Hash.h"
+
+1426692268 source:c:\kennsla\gagnaskipan\projects\solutions\v8_contactlist_hashmap\v8_contactlist_hashmap\stringcontactpair.cpp
+	"ContactNode.h"
+
