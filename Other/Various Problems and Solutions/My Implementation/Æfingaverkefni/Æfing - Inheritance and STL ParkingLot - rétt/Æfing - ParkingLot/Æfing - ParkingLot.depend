@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1492533906 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - inheritance and stl parkinglot\Æfing - parkinglot\main.cpp
+	<iostream>
+	"cars.h"
+
+1492534371 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - inheritance and stl parkinglot\Æfing - parkinglot\include\cars.h
+	<vector>
+	<iostream>
+
+1492618814 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\Æfingaverkefni\Æfing - inheritance and stl parkinglot - rétt\Æfing - parkinglot\main.cpp
+	<iostream>
+	<vector>
+

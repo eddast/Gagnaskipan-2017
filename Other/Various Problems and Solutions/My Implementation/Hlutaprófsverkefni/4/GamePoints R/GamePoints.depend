@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1489588342 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\main.cpp
+	<iostream>
+	"gamepoints.h"
+	"pointbucket.h"
+
+1489587746 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\include\gamepoints.h
+	<string>
+
+1489589350 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\include\pointbucket.h
+	<vector>
+	<map>
+	<set>
+	"gamepoints.h"
+
+1489588358 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\src\gamepoints.cpp
+	<ostream>
+	"gamepoints.h"
+
+1489588041 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\src\pointbucket.cpp
+	<iostream>
+	"pointbucket.h"
+
+1489589492 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4\gamepoints\gamepoints.cpp
+	<ostream>
+	"gamepoints.h"
+
+1489589485 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4\gamepoints\gamepoints.h
+	<string>
+
+1489597035 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4\gamepoints\main.cpp
+	<iostream>
+	"gamepoints.h"
+	"pointbucket.h"
+
+1489589545 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4\gamepoints\pointbucket.h
+	<vector>
+	<map>
+	<set>
+	"gamepoints.h"
+
+1492553193 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints\gamepoints.cpp
+	<ostream>
+	"gamepoints.h"
+
+1492551591 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints\gamepoints.h
+	<string>
+
+1492541988 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints\main.cpp
+	<iostream>
+	"gamepoints.h"
+	"pointbucket.h"
+
+1492552398 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints\pointbucket.h
+	<vector>
+	<map>
+	<set>
+	"gamepoints.h"
+
+1492552988 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints\pointbucket.cpp
+	<iostream>
+	"pointbucket.h"
+
+1492553193 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints r\gamepoints.cpp
+	<ostream>
+	"gamepoints.h"
+
+1492551591 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints r\gamepoints.h
+	<string>
+
+1492541988 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints r\main.cpp
+	<iostream>
+	"gamepoints.h"
+	"pointbucket.h"
+
+1492552398 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints r\pointbucket.h
+	<vector>
+	<map>
+	<set>
+	"gamepoints.h"
+
+1492552988 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\4\gamepoints r\pointbucket.cpp
+	<iostream>
+	"pointbucket.h"
+

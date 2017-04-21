@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1465550886 source:c:\users\edda steinunn\desktop\v4_recursion\v4_reverselist\revi\main.cpp
+	<fstream>
+	"linkedlist.h"
+
+1492702693 c:\users\edda steinunn\desktop\v4_recursion\v4_reverselist\revi\linkedlist.h
+	<cstddef>
+	<iostream>
+	"listnode.h"
+
+1465480630 c:\users\edda steinunn\desktop\v4_recursion\v4_reverselist\revi\listnode.h
+

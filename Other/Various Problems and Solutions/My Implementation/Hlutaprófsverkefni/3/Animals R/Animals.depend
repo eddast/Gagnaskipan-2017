@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1492546060 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\animals\main.cpp
+	<iostream>
+	"queue.h"
+	"animals.h"
+
+1492541946 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\animals\queue.h
+	"linkedlist.h"
+
+1492541946 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\animals\linkedlist.h
+	<cstddef>
+	<iostream>
+	"listnode.h"
+
+1492541946 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\animals\listnode.h
+
+1492546055 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\animals\include\animals.h
+

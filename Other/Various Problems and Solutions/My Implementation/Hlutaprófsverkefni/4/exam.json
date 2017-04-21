@@ -1,0 +1,216 @@
+{
+  "course": "T-201-GSKI, Gagnaskipan, 2017-1", 
+  "parts": [
+    {
+      "text": "", 
+      "id": "3ec9640d-ca23-46f5-9643-06f9ec76605b", 
+      "questions": [
+        {
+          "weight": "5", 
+          "text": "<p>&THORN;&uacute; ert me&eth; safn af <em>ra&eth;anlegum</em> g&ouml;gnum sem &thorn;&uacute; vilt setja inn &iacute; <em>tv&iacute;undarleitartr&eacute; </em>&aacute; &thorn;ann h&aacute;tt a&eth; sem flj&oacute;tlegast ver&eth;i a&eth; leita &iacute; &thorn;eim. &nbsp;Tv&iacute;undarleitartr&eacute;&eth; er <em>tilb&uacute;in gagnagrind</em> og &thorn;&uacute; setur g&ouml;gnin inn, <em>eitt og eitt</em>, me&eth; <em>insert()</em> fallinu &aacute; &thorn;v&iacute;. &nbsp;&THORN;a&eth; skiptir ekki m&aacute;li hve lengi &thorn;&uacute; ert a&eth; setja g&ouml;gnin inn &iacute; tr&eacute;&eth;, bara a&eth; &thorn;a&eth; ver&eth;i sem <em>skilvirkast a&eth; taka &thorn;au &uacute;t</em>.<br />\n<br />\n<em>Hver af eftirt&ouml;ldum a&eth;fer&eth;um vi&eth; a&eth; setja inn &iacute; tr&eacute;&eth; skilar skilvirkastri leit &iacute; tr&eacute;nu?</em></p>\n", 
+          "choices": [
+            {
+              "text": "B\u00e6ta \u00feeim inn \u00ed r\u00f6\u00f0, fr\u00e1 h\u00e6sta gildi a\u00f0 l\u00e6gsta", 
+              "selected": false, 
+              "id": "36861647-860a-4fda-bad2-2b41814fedf9"
+            }, 
+            {
+              "text": "B\u00e6ta \u00feeim inn \u00ed r\u00f6\u00f0, fr\u00e1 l\u00e6gsta gildi a\u00f0 h\u00e6sta", 
+              "selected": false, 
+              "id": "18c76883-ee5a-4a44-b609-e37a6e9a2ecd"
+            }, 
+            {
+              "text": "Ra\u00f0a g\u00f6gnunum, byrja svo \u00ed mi\u00f0junni og fara eitt stak til h\u00e6gri, svo vinstri, til skiptis \u00fear til komi\u00f0 er a\u00f0 endunum", 
+              "selected": false, 
+              "id": "58a39bc8-90c2-4769-b073-e6070ceb5fb4"
+            }, 
+            {
+              "text": "Slembivelja (random) st\u00f6k og b\u00e6ta inn \u00ed listann \u00fear til \u00f6ll st\u00f6kin hafa veri\u00f0 valin", 
+              "selected": false, 
+              "id": "a79a9167-3708-4ca8-8c69-1b3c7f62d3ab"
+            }
+          ], 
+          "label": "", 
+          "type": "single_choice", 
+          "id": "aee7e6ca-90c3-4f71-afb8-269f623c263a"
+        }, 
+        {
+          "weight": "5", 
+          "text": "<p>Ef &oacute;ra&eth;a&eth;ur tv&iacute;tengdur listi (DLL) er borinn saman vi&eth; tv&iacute;undarleitartr&eacute; (BST) m&aacute; sj&aacute; a&eth; allar eftirtaldar a&eth;ger&eth;ir eru hra&eth;virkari &aacute; BST heldur en &aacute; DLL, a&eth; &thorn;v&iacute; gefnu a&eth; verulegt magn gagna s&eacute; til sta&eth;ar &iacute; gagnagrindunum. &nbsp;Allar nema ein, &thorn;.e.a.s. &nbsp;Hver er &thorn;essi eina sem er hra&eth;virkari &aacute; DLL?</p>\n", 
+          "choices": [
+            {
+              "text": "A\u00f0 finna sta\u00f0setningu tiltekinna gagna", 
+              "selected": false, 
+              "id": "a1b00c7f-a431-43f5-a8e8-ee132df13973"
+            }, 
+            {
+              "text": "A\u00f0 fjarl\u00e6gja tiltekin g\u00f6gn \u00far gagnagrindinni", 
+              "selected": false, 
+              "id": "3b5f40ba-f447-4954-b10c-23383c467cf9"
+            }, 
+            {
+              "text": "A\u00f0 b\u00e6ta g\u00f6gnum \u00ed gagnagrindina", 
+              "selected": false, 
+              "id": "a8b36c43-1083-4ae6-b499-2e45e2b0852c"
+            }, 
+            {
+              "text": "A\u00f0 skrifa \u00fat \u00f6ll g\u00f6gnin \u00ed r\u00f6\u00f0", 
+              "selected": false, 
+              "id": "8365cbb1-9ce3-4699-9e57-36363298060f"
+            }, 
+            {
+              "text": "A\u00f0 finna \u00f6ll g\u00f6gn me\u00f0 gildi \u00e1 \u00e1kve\u00f0nu bili", 
+              "selected": false, 
+              "id": "ae3d84ec-cce1-4052-a16c-417df9959d87"
+            }
+          ], 
+          "label": "", 
+          "type": "single_choice", 
+          "id": "ba2acaa4-2b16-4ad1-91b4-4c8319d71bb2"
+        }
+      ], 
+      "name": "Tv\u00edundarleitartr\u00e9 (Binary Search Tree)"
+    }, 
+    {
+      "text": "<p>&Iacute; eftirfarandi spurningum &aacute; a&eth; velja gagnagrind til a&eth; leysa &aacute;kve&eth;i&eth; verkefni. &nbsp;&Iacute; hverju tilfelli er ein gagnagrind best sni&eth;in a&eth; verkefninu sem &thorn;arf a&eth; leysa. &nbsp;&THORN;v&iacute; er einingis eitt r&eacute;tt svar &iacute; hverju tilfelli.</p>\n", 
+      "id": "d027e839-9d41-477f-9357-02a0ecbf3489", 
+      "questions": [
+        {
+          "weight": "5", 
+          "text": "<p>Forrita &thorn;arf <em><strong>undo</strong></em>&nbsp;virkni.</p>\n\n<p>&Iacute; hvert sinn sem <em>a&eth;ger&eth;</em> er framkv&aelig;md er h&uacute;n geymd, svo h&aelig;gt s&eacute; a&eth; finna hana og <em>fjarl&aelig;gja &aacute;hrif hennar</em>.<br />\n&THORN;egar kalla&eth; er &aacute; <em><strong>undo</strong></em> er seinasta <em>a&eth;ger&eth;</em> s&oacute;tt og &aacute;hrif hennar fjarl&aelig;g&eth;. &nbsp;N&aelig;st &thorn;egar kalla&eth; er &aacute; <em><strong>undo</strong></em> er <em>a&eth;ger&eth;in</em> &thorn;ar &aacute; undan s&oacute;tt, og svo koll af kolli.</p>\n\n<p>Hva&eth;a <em>gagnagrind</em>&nbsp;velur&eth;u til a&eth;&nbsp;geyma <em>a&eth;ger&eth;irnar</em>?</p>\n", 
+          "choices": [
+            {
+              "text": "vector", 
+              "selected": false, 
+              "id": "3b4ae865-aca1-4b94-b61d-f1cbcd954efd"
+            }, 
+            {
+              "text": "queue", 
+              "selected": false, 
+              "id": "e4674289-996f-4176-a56f-875db69f3cbc"
+            }, 
+            {
+              "text": "priority_queue", 
+              "selected": false, 
+              "id": "b2dc6d45-ac82-4e76-82eb-e35fc0f32cfd"
+            }, 
+            {
+              "text": "stack", 
+              "selected": false, 
+              "id": "0a04cf8b-ea73-44b3-ae8e-d008f0133264"
+            }, 
+            {
+              "text": "set", 
+              "selected": false, 
+              "id": "5de60997-2720-4954-a97f-ac4b23ca2d58"
+            }, 
+            {
+              "text": "map", 
+              "selected": false, 
+              "id": "a0565f3c-fac1-44d2-b126-bb582395417e"
+            }, 
+            {
+              "text": "unordered_map", 
+              "selected": false, 
+              "id": "690552b9-dc7b-4149-8bee-7cc510ec0df3"
+            }
+          ], 
+          "label": "", 
+          "type": "single_choice", 
+          "id": "ad27715c-9b16-4d29-8b7b-389babff1e01"
+        }, 
+        {
+          "weight": "5", 
+          "text": "<p>Forrit heldur utan um <em>f&aelig;rslur</em> sem slegnar eru inn. &nbsp;Hver <em>f&aelig;rsla</em> hefur <em>einkennist&ouml;lu</em>.<br />\nSkj&aacute;myndir forritsins birta &thorn;essar <em>f&aelig;rslur</em> &aacute; mismunandi h&aacute;tt, sumar <em>lista</em> yfir &thorn;&aelig;r en a&eth;rar velja <em>staka</em> <em>f&aelig;rslu</em> og birta n&aacute;kv&aelig;mari uppl&yacute;singar. &nbsp;H&aelig;gt er a&eth; leita a&eth; f&aelig;rslum eftir einkennist&ouml;lunni.<br />\n&THORN;&aelig;r sem birta <em>lista</em> (allar <em>f&aelig;rslurnar</em> e&eth;a hluta af &thorn;eim)&nbsp;birta &thorn;&aelig;r ra&eth;a&eth;ar eftir <em>einkennist&ouml;lunni</em>.</p>\n\n<p>Hva&eth;a <em>gagnagrind</em> velur&eth;u til a&eth; geyma <em>f&aelig;rslurnar</em>?</p>\n", 
+          "choices": [
+            {
+              "text": "vector", 
+              "selected": false, 
+              "id": "90bd27a9-3d38-44c4-b532-8f3867c61410"
+            }, 
+            {
+              "text": "queue", 
+              "selected": false, 
+              "id": "d87d5832-df57-499f-8a32-395a7d6eaf5c"
+            }, 
+            {
+              "text": "priority_queue", 
+              "selected": false, 
+              "id": "d07a1d64-df92-4c22-8885-50ed2855952a"
+            }, 
+            {
+              "text": "stack", 
+              "selected": false, 
+              "id": "ed6ff9eb-8c2a-4d95-bd25-c155a8e656c7"
+            }, 
+            {
+              "text": "set", 
+              "selected": false, 
+              "id": "ba46895e-1ab3-4c37-93be-6326e5b481cf"
+            }, 
+            {
+              "text": "map", 
+              "selected": false, 
+              "id": "827714e5-6d37-49a9-8909-5610d3c1300f"
+            }, 
+            {
+              "text": "unordered_map", 
+              "selected": false, 
+              "id": "49e909c1-f5ee-441a-8b3a-c8dddbac43a8"
+            }
+          ], 
+          "label": "", 
+          "type": "single_choice", 
+          "id": "16247953-11c8-4dae-ab93-355cfcd229f8"
+        }, 
+        {
+          "weight": "5", 
+          "text": "<p>&THORN;&uacute; &aacute;tt a&eth; forrita kerfi sem velur hva&eth;a s&iacute;mkerfisl&iacute;nu <em>skal svara n&aelig;st</em>.<br />\nS&iacute;mt&ouml;lunum skal svara&eth;<em> &iacute; &thorn;eirri r&ouml;&eth; sem &thorn;au berast</em>. &nbsp;&THORN;&oacute; skal svara s&iacute;mt&ouml;lum&nbsp;fr&aacute; VIP vi&eth;skiptavinum &aacute;&eth;ur en s&iacute;mt&ouml;lum fr&aacute; &ouml;&eth;rum er svara&eth;, s&iacute;mt&ouml;lum erlendis fr&aacute; er svara&eth; &aacute; undan innlendum s&iacute;mt&ouml;lum og s&iacute;mt&ouml;lum fr&aacute; skrifstofu forstj&oacute;ra er alltaf svara&eth; um lei&eth; og l&iacute;na losnar.</p>\n\n<p>Hva&eth;a <em>gagnagrind</em> notar&eth;u til a&eth; <em>halda utan um s&iacute;mt&ouml;lin</em> sem b&iacute;&eth;a &iacute; kerfinu?</p>\n", 
+          "choices": [
+            {
+              "text": "vector", 
+              "selected": false, 
+              "id": "0c0f2413-cebf-4edc-919f-39da21422a75"
+            }, 
+            {
+              "text": "queue", 
+              "selected": false, 
+              "id": "ae12ff2a-23a8-40c1-a8b4-93b2dcaca30c"
+            }, 
+            {
+              "text": "priority_queue", 
+              "selected": false, 
+              "id": "4c160b85-02f7-4f2f-97ec-28b98896030c"
+            }, 
+            {
+              "text": "stack", 
+              "selected": false, 
+              "id": "105be8d3-2c28-4084-8343-e8e22fc25d1a"
+            }, 
+            {
+              "text": "set", 
+              "selected": false, 
+              "id": "fb1c014e-a70e-4244-b656-6dfbfb1910c5"
+            }, 
+            {
+              "text": "map", 
+              "selected": false, 
+              "id": "abe3a0c2-c42f-41c2-b697-a49a917273aa"
+            }, 
+            {
+              "text": "unordered_map", 
+              "selected": false, 
+              "id": "738197fe-5bcc-48ac-b274-ee19c3339723"
+            }
+          ], 
+          "label": "", 
+          "type": "single_choice", 
+          "id": "9fd86583-83dd-4267-9ba5-9a07e12ea3b9"
+        }
+      ], 
+      "name": "Standard Template Library"
+    }
+  ], 
+  "exam_name": "Gagnaskipan vor 2017 - Hlutapr\u00f3f 4", 
+  "text": "<p>Pr&oacute;fi&eth; skiptist upp &iacute; fj&oacute;ra hluta, &thorn;rj&uacute; forritunarverkefni og spurningar.<br />\nHver hlutanna fj&ouml;gurra gildir jafnt, 25% af einkunn &iacute; pr&oacute;finu.</p>\n"
+}

@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1492452131 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - average calculator\Æfing - average calculator\averagecalculator.cpp
+	"averagecalculator.h"
+
+1492452131 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - average calculator\Æfing - average calculator\averagecalculator.h
+	"doublevector.h"
+
+1492452131 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - average calculator\Æfing - average calculator\doublevector.h
+	<iostream>
+
+1492452131 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - average calculator\Æfing - average calculator\doublevector.cpp
+	<cmath>
+	"doublevector.h"
+
+1492453888 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - average calculator\Æfing - average calculator\main.cpp
+	<iostream>
+	"averagecalculator.h"
+	"factoraveragecalculator.h"
+
+1492453830 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - average calculator\Æfing - average calculator\src\factoraveragecalculator.cpp
+	"factoraveragecalculator.h"
+
+1492453830 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - average calculator\Æfing - average calculator\include\factoraveragecalculator.h
+	"../averagecalculator.h"
+

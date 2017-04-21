@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1487094606 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof2_prep\templatepair\main.cpp
+	<iostream>
+	"pair.h"
+
+1487094668 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof2_prep\templatepair\pair.h
+	<ostream>
+
+1487247566 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof2_solutions\templatepair\main.cpp
+	<iostream>
+	"pair.h"
+
+1487094668 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof2_solutions\templatepair\pair.h
+	<ostream>
+

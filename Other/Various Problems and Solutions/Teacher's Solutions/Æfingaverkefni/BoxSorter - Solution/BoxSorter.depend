@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1467374546 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\boxsorter\boxsorter.cpp
+	"boxsorter.h"
+
+1467374546 c:\kennsla\gagnaskipan\exams\hlutaprof4\boxsorter\boxsorter.h
+	<iostream>
+	"box.h"
+
+1467374605 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\boxsorter\main.cpp
+	<iostream>
+	"boxsorter.h"
+
+1467374645 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\boxsorter\box.cpp
+	"box.h"
+
+1467374185 c:\kennsla\gagnaskipan\exams\hlutaprof4\boxsorter\box.h
+	<iostream>
+
+1467850770 source:c:\kennsla\gagnaskipan\exams\hlutaprof4_solutions\boxsorter\box.cpp
+	"box.h"
+
+1467850593 c:\kennsla\gagnaskipan\exams\hlutaprof4_solutions\boxsorter\box.h
+	<iostream>
+
+1467375651 source:c:\kennsla\gagnaskipan\exams\hlutaprof4_solutions\boxsorter\main.cpp
+	<iostream>
+	"boxsorter.h"
+
+1467850797 c:\kennsla\gagnaskipan\exams\hlutaprof4_solutions\boxsorter\boxsorter.h
+	<iostream>
+	<vector>
+	<set>
+	"box.h"
+
+1467850770 source:c:\kennsla\gagnaskipan\projects\solutions\practicestl_boxsorter\box.cpp
+	"box.h"
+
+1467850593 c:\kennsla\gagnaskipan\projects\solutions\practicestl_boxsorter\box.h
+	<iostream>
+
+1489665515 source:c:\kennsla\gagnaskipan\projects\solutions\practicestl_boxsorter\boxsorter.cpp
+	"boxsorter.h"
+
+1467850797 c:\kennsla\gagnaskipan\projects\solutions\practicestl_boxsorter\boxsorter.h
+	<iostream>
+	<vector>
+	<set>
+	"box.h"
+
+1467375651 source:c:\kennsla\gagnaskipan\projects\solutions\practicestl_boxsorter\main.cpp
+	<iostream>
+	"boxsorter.h"
+

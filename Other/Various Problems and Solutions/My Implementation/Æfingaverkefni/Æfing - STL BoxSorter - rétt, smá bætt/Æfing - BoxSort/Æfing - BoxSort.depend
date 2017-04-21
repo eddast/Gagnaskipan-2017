@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1492532770 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl boxsorter\Æfing - boxsort\box.cpp
+	"box.h"
+
+1492532759 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl boxsorter\Æfing - boxsort\box.h
+	<iostream>
+
+1492532934 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl boxsorter\Æfing - boxsort\boxsorter.cpp
+	"boxsorter.h"
+	<queue>
+
+1492533110 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl boxsorter\Æfing - boxsort\boxsorter.h
+	<iostream>
+	<deque>
+	<set>
+	<stack>
+	"box.h"
+
+1492532934 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl boxsorter\Æfing - boxsort\main.cpp
+	<iostream>
+	"boxsorter.h"
+

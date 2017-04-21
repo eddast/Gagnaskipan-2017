@@ -1,0 +1,185 @@
+input:	
+
+Book book1("The Fellowship of the Ring", 1338, 600);
+    cout << book1;
+    
+    Book book2("The Way of Kings", 1337, 800);
+    cout << book2;
+    
+    Book book3("The Windup Bird Chronicle", 9000, 700);
+    cout << book3;
+    
+    Book book4("The Alloy of Law", 87665, 300);
+    cout << book4;
+    
+    
+    Library library(3);
+    library.addBook(book1);
+    library.addBook(book2);
+    library.addBook(book3);
+    library.addBook(book4);
+    
+    library.listBooks();
+    
+    library.checkOutBookByISBN(1337);
+    library.checkOutBookByISBN(1000);
+    
+    library.checkOutBookByTitle("The Way of Kings");
+    library.checkOutBookByTitle("The Way of Nerds");
+    
+    library.returnBookByISBN(1338);
+    library.returnBookByISBN(87665);
+    
+    library.returnBookByTitle("The Way of Kings");
+    library.returnBookByTitle("The Alloy of Law");
+    
+    Book book01("1", 1, 1);
+    Book book02("2", 2, 2);
+    Book book03("3", 3, 3);
+    Book book04("4", 4, 4);
+    Book book05("5", 5, 5);
+    Book book06("6", 6, 6);
+    Book book07("7", 7, 7);
+    Book book08("8", 8, 8);
+    Book book09("9", 9, 9);
+    Book book10("10", 10, 10);
+    
+    
+    Library library2(10);
+    
+    library2.addBook(book01);
+    library2.addBook(book02);
+    library2.addBook(book03);
+    library2.addBook(book04);
+    library2.addBook(book05);
+    library2.addBook(book06);
+    library2.addBook(book07);
+    library2.addBook(book08);
+    library2.addBook(book09);
+    library2.addBook(book01); // No book in place 9
+    
+    library2.listBooks();
+    
+    library2.checkOutBookByISBN(11);  //Book not found
+    library2.checkOutBookByISBN(1);   //1 is not checked out
+    library2.checkOutBookByISBN(1);   //1 is already checked out
+    library2.returnBookByISBN(1);     //1 has been returned
+    library2.returnBookByISBN(1);     //1 is already in library
+    
+    library2.checkOutBookByTitle("11");  //Book not found
+    library2.checkOutBookByTitle("1");   //1 is not checked out
+    library2.checkOutBookByTitle("1");   //1 is already checked out
+    library2.returnBookByTitle("1");     //1 has been returned
+    library2.returnBookByTitle("1");     //1 is already in library
+
+output:
+
+Title: The Fellowship of the Ring
+ISBN: 1338
+Page count: 600
+Book is available
+Title: The Way of Kings
+ISBN: 1337
+Page count: 800
+Book is available
+Title: The Windup Bird Chronicle
+ISBN: 9000
+Page count: 700
+Book is available
+Title: The Alloy of Law
+ISBN: 87665
+Page count: 300
+Book is available
+The Fellowship of the Ring added to library!
+The Way of Kings added to library!
+The Windup Bird Chronicle added to library!
+Library is full!
+Title: The Fellowship of the Ring
+ISBN: 1338
+Page count: 600
+Book is available
+
+Title: The Way of Kings
+ISBN: 1337
+Page count: 800
+Book is available
+
+Title: The Windup Bird Chronicle
+ISBN: 9000
+Page count: 700
+Book is available
+
+The Way of Kings is now checked out!
+Book not found!
+The Way of Kings is already checked out!
+Book not found!
+The Fellowship of the Ring is already in library!
+Book not found!
+The Way of Kings has been returned!
+Book not found!
+1 added to library!
+2 added to library!
+3 added to library!
+4 added to library!
+5 added to library!
+6 added to library!
+7 added to library!
+8 added to library!
+9 added to library!
+Book with title 1  already in library!
+Title: 1
+ISBN: 1
+Page count: 1
+Book is available
+
+Title: 2
+ISBN: 2
+Page count: 2
+Book is available
+
+Title: 3
+ISBN: 3
+Page count: 3
+Book is available
+
+Title: 4
+ISBN: 4
+Page count: 4
+Book is available
+
+Title: 5
+ISBN: 5
+Page count: 5
+Book is available
+
+Title: 6
+ISBN: 6
+Page count: 6
+Book is available
+
+Title: 7
+ISBN: 7
+Page count: 7
+Book is available
+
+Title: 8
+ISBN: 8
+Page count: 8
+Book is available
+
+Title: 9
+ISBN: 9
+Page count: 9
+Book is available
+
+No book in place 9!
+Book not found!
+1 is now checked out!
+1 is already checked out!
+1 has been returned!
+1 is already in library!
+Book not found!
+1 is now checked out!
+1 is already checked out!
+1 has been returned!
+1 is already in library!

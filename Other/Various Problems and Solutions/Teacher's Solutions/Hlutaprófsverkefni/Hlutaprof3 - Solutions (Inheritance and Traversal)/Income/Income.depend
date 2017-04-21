@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1466028547 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\income.cpp
+	"income.h"
+
+1466028252 c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\income.h
+
+1466028096 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\netincome.cpp
+	"netincome.h"
+
+1466028096 c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\netincome.h
+
+1466028516 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\main.cpp
+	<iostream>
+	"income.h"
+	"netincome.h"
+
+1466028547 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_solutions\income\income.cpp
+	"income.h"
+
+1466028252 c:\kennsla\gagnaskipan\exams\hlutaprof2_solutions\income\income.h
+
+1466030342 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_solutions\income\main.cpp
+	<iostream>
+	"income.h"
+	"netincome.h"
+
+1466030233 c:\kennsla\gagnaskipan\exams\hlutaprof2_solutions\income\netincome.h
+	"income.h"
+
+1466030281 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_solutions\income\netincome.cpp
+	"netincome.h"
+

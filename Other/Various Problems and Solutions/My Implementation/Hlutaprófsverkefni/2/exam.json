@@ -1,0 +1,134 @@
+{
+  "course": "T-201-GSKI, Gagnaskipan, 2017-1", 
+  "parts": [
+    {
+      "text": "<p>You have access to an implementation of a linked list.<br />\nIt implements the following functions:<br />\npush_front(value)&nbsp;- adds the value to the front of the list<br />\npush_back(value) - adds the value to the back of the list<br />\npop_front() - removes and returns the value from the front of the list</p>\n\n<p>You need to use this functionality to implement both a stack and a queue.<br />\n<br />\n&THORN;&uacute; f&aelig;r&eth; gefna &uacute;tf&aelig;rslu &aacute; tengdum lista.<br />\nEftirfarandi f&ouml;ll eru &uacute;tf&aelig;r&eth;:<br />\npush_front(value)&nbsp;- b&aelig;tir staki framan &aacute; listann<br />\npush_back(value) - b&aelig;tir staki aftan &aacute; listann<br />\npop_front() - fjarl&aelig;gir og skilar stakinu fremst af listanum</p>\n\n<p>&THORN;&uacute; &thorn;arft a&eth; nota &thorn;essa virkni til a&eth; &uacute;tf&aelig;ra b&aelig;&eth;i stafla og bi&eth;r&ouml;&eth;.</p>\n", 
+      "id": "2bc57e2e-9ac9-4022-a971-4b2fb03cd953", 
+      "questions": [
+        {
+          "weight": "3", 
+          "text": "<p>Which functionality would you use to implement the operation Queue::add()?</p>\n\n<p>Hva&eth;a virkni mydir &thorn;&uacute; nota til a&eth; &uacute;tf&aelig;ra a&eth;ger&eth;ina Queue::add()?</p>\n", 
+          "choices": [
+            {
+              "text": "push_front()", 
+              "selected": false, 
+              "id": "2c29b95c-44b7-44ad-801d-654933365dc2"
+            }, 
+            {
+              "text": "push_back()", 
+              "selected": false, 
+              "id": "06f1bb14-38aa-4f5f-96be-fb20829d7d21"
+            }, 
+            {
+              "text": "pop_front()", 
+              "selected": false, 
+              "id": "70ba239a-1e5a-4b5b-bd14-4d220a34a3d4"
+            }
+          ], 
+          "label": "Queue::add()", 
+          "type": "single_choice", 
+          "id": "bd9459db-dd3c-42b6-a5d6-4351358b095e"
+        }, 
+        {
+          "weight": "3", 
+          "text": "<p>Which functionality would you use to implement the operation Queue::remove()?</p>\n\n<p>Hva&eth;a virkni mydir &thorn;&uacute; nota til a&eth; &uacute;tf&aelig;ra a&eth;ger&eth;ina Queue::remove()?</p>\n", 
+          "choices": [
+            {
+              "text": "push_front()", 
+              "selected": false, 
+              "id": "c037197c-7f0a-4e40-b2f9-619fc9547681"
+            }, 
+            {
+              "text": "push_back()", 
+              "selected": false, 
+              "id": "10e467f9-a93a-416c-a959-1dcddb235d08"
+            }, 
+            {
+              "text": "pop_front()", 
+              "selected": false, 
+              "id": "0d900e28-6f44-4b2a-b68a-4f6914eefba6"
+            }
+          ], 
+          "label": "Queue::remove()", 
+          "type": "single_choice", 
+          "id": "cb0e6314-6764-40d9-b144-6e1d30de2228"
+        }, 
+        {
+          "weight": "3", 
+          "text": "<p>Which functionality would you use to implement the operation Stack::push()?</p>\n\n<p>Hva&eth;a virkni mydir &thorn;&uacute; nota til a&eth; &uacute;tf&aelig;ra a&eth;ger&eth;ina Stack::push()?</p>\n", 
+          "choices": [
+            {
+              "text": "push_front()", 
+              "selected": false, 
+              "id": "1be057d2-8940-44c3-bfa9-336f20727667"
+            }, 
+            {
+              "text": "push_back()", 
+              "selected": false, 
+              "id": "df63e6f0-62f2-463d-a3ca-e3fb76b8a986"
+            }, 
+            {
+              "text": "pop_front()", 
+              "selected": false, 
+              "id": "ba066a27-5b36-42c0-a33a-28cf7e826e0a"
+            }
+          ], 
+          "label": "Stack::push()", 
+          "type": "single_choice", 
+          "id": "41127660-0a94-4199-80b7-9504ebc8c50c"
+        }, 
+        {
+          "weight": "3", 
+          "text": "<p>Which functionality would you use to implement the operation Stack::pop()?</p>\n\n<p>Hva&eth;a virkni mydir &thorn;&uacute; nota til a&eth; &uacute;tf&aelig;ra a&eth;ger&eth;ina Stack::pop()?</p>\n", 
+          "choices": [
+            {
+              "text": "push_front()", 
+              "selected": false, 
+              "id": "5a82915c-442b-4050-8f77-efa1f830922a"
+            }, 
+            {
+              "text": "push_back()", 
+              "selected": false, 
+              "id": "6a6b8d23-d6e6-4059-ac94-439d55296016"
+            }, 
+            {
+              "text": "pop_front()", 
+              "selected": false, 
+              "id": "3b732730-8ca9-48f2-bfa0-9259e079b93f"
+            }
+          ], 
+          "label": "Stack::pop()", 
+          "type": "single_choice", 
+          "id": "b5f24707-77e5-4a30-9a80-77e6eedf2906"
+        }
+      ], 
+      "name": "Stack and Queue"
+    }, 
+    {
+      "text": "<p><strong>Sko&eth;i&eth; eftirfarandi fall:</strong></p>\n\n<p><tt>int foo(char *bar, int nub) {<br />\n&nbsp; &nbsp; if(nub == 0) { return 0; }<br />\n&nbsp; &nbsp; --nub;<br />\n&nbsp; &nbsp; if(bar[nub] == &#39;a&#39;) { return 1 + foo(bar, nub); }<br />\n&nbsp; &nbsp; return foo(bar, nub);<br />\n}</tt></p>\n", 
+      "id": "7f09f3c2-0e48-40ae-b059-ec5823976d8f", 
+      "questions": [
+        {
+          "weight": "10", 
+          "text": "<p><strong>Hva&eth; gerir falli&eth;?</strong><br />\nReyni&eth; a&eth; vera stuttor&eth; en n&aacute;kv&aelig;m og ekki bara telja upp hva&eth; forritsl&iacute;nurnar gera.</p>\n", 
+          "label": "", 
+          "length": "4", 
+          "answer": "", 
+          "type": "essay", 
+          "id": "5ef5d075-d590-44fd-8fd5-0532f8a92728"
+        }, 
+        {
+          "weight": "3", 
+          "text": "<p><strong>Hvert er &uacute;ttaki&eth; &uacute;r eftirfarandi forriti:</strong></p>\n\n<p><tt>int main() {<br />\n&nbsp; &nbsp; cout &lt;&lt; foo(&quot;Thomas Barnaby&quot;, 14) &lt;&lt; endl;<br />\n}</tt></p>\n", 
+          "label": "", 
+          "answer": "", 
+          "type": "short_text", 
+          "id": "9dd8cea3-0686-461a-af64-2c7d4889daa9"
+        }
+      ], 
+      "name": "Endurkv\u00e6mni (Recursion)"
+    }
+  ], 
+  "exam_name": "Gagnaskipan vor 2017 - Hlutapr\u00f3f 2", 
+  "text": "<p>Pr&oacute;fi&eth; skiptist upp &iacute; fj&oacute;ra hluta, krossaspurningar og &thorn;rj&uacute; forritunarverkefni.<br />\nHver hlutanna fj&ouml;gurra gildir jafnt, 25% af einkunn &iacute; pr&oacute;finu.</p>\n"
+}

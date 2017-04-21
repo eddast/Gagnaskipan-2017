@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1489596926 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\main.cpp
+	<iostream>
+	"gamepoints.h"
+	"pointbucket.h"
+
+1489587746 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\include\gamepoints.h
+	<string>
+
+1489589350 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\include\pointbucket.h
+	<vector>
+	<map>
+	<set>
+	"gamepoints.h"
+
+1489588358 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\src\gamepoints.cpp
+	<ostream>
+	"gamepoints.h"
+
+1489588041 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\src\pointbucket.cpp
+	<iostream>
+	"pointbucket.h"
+
+1489596953 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\gamepoints.cpp
+	<ostream>
+	"gamepoints.h"
+
+1489587746 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\gamepoints.h
+	<string>
+
+1489589350 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\pointbucket.h
+	<vector>
+	<map>
+	<set>
+	"gamepoints.h"
+
+1489596898 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\gamepoints\pointbucket.cpp
+	<iostream>
+	"pointbucket.h"
+

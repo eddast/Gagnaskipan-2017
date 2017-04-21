@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1466711761 source:c:\kennsla\gagnaskipan\exams\hlutaprof3\binarytreetraversal\binarytree.cpp
+	<iostream>
+	"binarytree.h"
+
+1466711920 c:\kennsla\gagnaskipan\exams\hlutaprof3\binarytreetraversal\binarytree.h
+	"binarytreenode.h"
+
+1466711920 c:\kennsla\gagnaskipan\exams\hlutaprof3\binarytreetraversal\binarytreenode.h
+	<cstddef>
+
+1466711420 source:c:\kennsla\gagnaskipan\exams\hlutaprof3\binarytreetraversal\binarytreenode.cpp
+	<iostream>
+	"binarytreenode.h"
+
+1466711523 source:c:\kennsla\gagnaskipan\exams\hlutaprof3\binarytreetraversal\main.cpp
+	<iostream>
+	"binarytree.h"
+
+1487776744 source:c:\kennsla\gagnaskipan\projects\practicebinarytreetraversal\binarytree.cpp
+	<iostream>
+	"binarytree.h"
+
+1487776680 c:\kennsla\gagnaskipan\projects\practicebinarytreetraversal\binarytree.h
+	"binarytreenode.h"
+	<ostream>
+
+1466711920 c:\kennsla\gagnaskipan\projects\practicebinarytreetraversal\binarytreenode.h
+	<cstddef>
+
+1466711420 source:c:\kennsla\gagnaskipan\projects\practicebinarytreetraversal\binarytreenode.cpp
+	<iostream>
+	"binarytreenode.h"
+
+1487776644 source:c:\kennsla\gagnaskipan\projects\practicebinarytreetraversal\main.cpp
+	<iostream>
+	"binarytree.h"
+

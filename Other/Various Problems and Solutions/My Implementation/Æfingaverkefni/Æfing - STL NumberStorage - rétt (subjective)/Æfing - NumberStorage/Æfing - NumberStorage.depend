@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1492521103 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl numberstorage\Æfing - numberstorage\main.cpp
+	<iostream>
+	"interface.h"
+
+1492522167 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl numberstorage\Æfing - numberstorage\include\interface.h
+	"storage.h"
+	<iostream>
+
+1492522847 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl numberstorage\Æfing - numberstorage\src\interface.cpp
+	"interface.h"
+	<cstdlib>
+
+1492523043 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl numberstorage\Æfing - numberstorage\src\storage.cpp
+	"storage.h"
+
+1492522951 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - stl numberstorage\Æfing - numberstorage\include\storage.h
+	<iostream>
+	<set>
+

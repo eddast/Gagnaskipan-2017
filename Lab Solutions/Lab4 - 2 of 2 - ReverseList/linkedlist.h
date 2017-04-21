@@ -3,8 +3,7 @@
 
 #include <cstddef>
 #include <iostream>
-#include "queue.h"
-#include "stack.h"
+
 #include "listnode.h"
 
 using namespace std;
@@ -12,7 +11,7 @@ using namespace std;
 class EmptyException { };
 
 template <class T>
-class LinkedList : public Queue<T>, public Stack<T>
+class LinkedList
 {
     public:
         LinkedList() {
@@ -31,18 +30,16 @@ class LinkedList : public Queue<T>, public Stack<T>
             tail = NULL;
         }
 
-	// Implementing the virtual stack function push
-        void push(T value) {
+        void push_front(T value) {
             head = new ListNode<T>(value, head);
             if(tail == NULL) {
                 tail = head;
             }
         }
 
-	// Implementing the virtual queue function add
-        void add(T value) {
+        void push_back(T value) {
             if(head == NULL) {
-                push(value);
+                push_front(value);
             }
             else {
                 ListNode<T> *newNode = new ListNode<T>(value, NULL);
@@ -51,8 +48,7 @@ class LinkedList : public Queue<T>, public Stack<T>
             }
         }
 
-	// Implementing the virtual stack function pop
-        T pop() {
+        T pop_front() {
             if(head == NULL) {
                 throw EmptyException();
             }
@@ -66,30 +62,45 @@ class LinkedList : public Queue<T>, public Stack<T>
             return data;
         }
 
-	// Implementing the virtual queue function remove
-	// Only calls and returns pop since function is the same
-        T remove(){
-            return pop();
+        // This is the public reverse function, called from the outside
+        void reverse(){
+            if(head != NULL)
+            {
+                reverse_recursive(head, NULL, head->next);
+            }
         }
 
-	// prints using ostream for stack and queue
-        void print(ostream& outs) const{
-            ListNode<T> *tmpNode = head;
+        friend ostream& operator <<(ostream& outs, const LinkedList<T> &lis) {
+            ListNode<T> *tmpNode = lis.head;
             while(tmpNode != NULL) {
                 outs << tmpNode->data << " ";
                 tmpNode = tmpNode->next;
             }
-        }
-
-	// Uses print function to override the << operator
-        friend ostream& operator <<(ostream& outs, const LinkedList<T> &lis) {
-            lis.print(outs);
             return outs;
         }
 
     private:
+        void reverse_recursive(ListNode<T>* node, ListNode<T>* node_prev, ListNode<T>* node_next)
+        {
+            if(node == NULL)
+            {
+                tail = head;
+                head = node_prev;
+                return;
+            }
+            else
+            {
+                node_next = node->next;
+            }
+            node->next = node_prev;
+            node_prev = node;
+
+            reverse_recursive(node_next, node, node);
+        }
+
         ListNode<T> *head;
         ListNode<T> *tail;
+
 };
 
 

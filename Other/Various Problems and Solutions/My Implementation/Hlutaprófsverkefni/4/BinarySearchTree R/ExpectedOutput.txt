@@ -1,0 +1,364 @@
+
+INSERT TEST
+
+HIGH SCORES
+
+player01: 111
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player04: 17
+
+HIGH SCORES
+
+player12: 178
+player15: 167
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player16: 58
+player09: 21
+player04: 17
+player11: 15
+
+REMOVE TEST
+
+HIGH SCORES
+
+player12: 178
+player15: 167
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player16: 58
+player09: 21
+player04: 17
+player11: 15
+
+remove player15
+
+HIGH SCORES
+
+player12: 178
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player16: 58
+player09: 21
+player04: 17
+player11: 15
+
+remove player09
+
+HIGH SCORES
+
+player12: 178
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player16: 58
+player04: 17
+player11: 15
+
+remove player16
+
+HIGH SCORES
+
+player12: 178
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player04: 17
+player11: 15
+
+remove player12
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player04: 17
+player11: 15
+
+remove player07
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player04: 17
+player11: 15
+
+remove player03
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player04: 17
+player11: 15
+
+remove player06
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player08: 98
+player04: 17
+player11: 15
+
+remove player08
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player04: 17
+player11: 15
+
+INSERT AND REMOVE TEST
+
+HIGH SCORES
+
+player01: 111
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player07: 67
+player04: 17
+
+remove player07
+
+HIGH SCORES
+
+player01: 111
+player05: 108
+player06: 100
+player02: 100
+player08: 98
+player03: 97
+player04: 17
+
+remove player06
+
+HIGH SCORES
+
+player01: 111
+player05: 108
+player02: 100
+player08: 98
+player03: 97
+player04: 17
+
+remove player08
+
+HIGH SCORES
+
+player01: 111
+player05: 108
+player02: 100
+player03: 97
+player04: 17
+
+HIGH SCORES
+
+player12: 178
+player15: 167
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player16: 58
+player09: 21
+player04: 17
+player11: 15
+
+remove player15
+
+HIGH SCORES
+
+player12: 178
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player16: 58
+player09: 21
+player04: 17
+player11: 15
+
+remove player09
+
+HIGH SCORES
+
+player12: 178
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player16: 58
+player04: 17
+player11: 15
+
+remove player16
+
+HIGH SCORES
+
+player12: 178
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player04: 17
+player11: 15
+
+remove player12
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player04: 17
+player11: 15
+
+remove player07
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player04: 17
+player11: 15
+
+remove player06
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player04: 17
+player11: 15
+
+remove player08
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player03: 97
+player04: 17
+player11: 15
+
+remove player03
+
+HIGH SCORES
+
+player10: 117
+player14: 112
+player01: 111
+player13: 109
+player05: 108
+player02: 100
+player04: 17
+player11: 15

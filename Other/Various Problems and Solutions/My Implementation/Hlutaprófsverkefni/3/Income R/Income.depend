@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1466028547 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\income.cpp
+	"income.h"
+
+1466028252 c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\income.h
+
+1466028096 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\netincome.cpp
+	"netincome.h"
+
+1466028096 c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\netincome.h
+
+1466028516 source:c:\kennsla\gagnaskipan\exams\hlutaprof2_tmp\income\main.cpp
+	<iostream>
+	"income.h"
+	"netincome.h"
+
+1492546372 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\income\income.cpp
+	"income.h"
+
+1492546567 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\income\income.h
+
+1492541947 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\income\main.cpp
+	<iostream>
+	"income.h"
+	"netincome.h"
+
+1492546560 c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\income\netincome.h
+	"income.h"
+
+1492546560 source:c:\users\edda steinunn\documents\gagnaskipan 2017\other\various problems and solutions\my implementation\hlutaprófsverkefni\3\income\netincome.cpp
+	"netincome.h"
+

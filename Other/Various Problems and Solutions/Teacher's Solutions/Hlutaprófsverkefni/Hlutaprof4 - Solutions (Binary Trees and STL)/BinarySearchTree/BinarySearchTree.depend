@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1467363222 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscore.cpp
+	<iostream>
+	<time.h>
+	"highscore.h"
+
+1467370205 c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscore.h
+	<string>
+	<set>
+
+1467288012 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscoretable.cpp
+	<iostream>
+	<fstream>
+	"highscoretable.h"
+
+1467287342 c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscoretable.h
+	<set>
+	"highscore.h"
+
+1467370974 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\main.cpp
+	<iostream>
+	"highscore.h"
+	"highscorebst.h"
+
+1467369788 c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscorebst.h
+	<set>
+	"highscorebstnode.h"
+
+1467361531 c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscorebstnode.h
+	"highscore.h"
+
+1467370377 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscorebst.cpp
+	<iostream>
+	<fstream>
+	"highscorebst.h"
+
+1467364185 source:c:\kennsla\gagnaskipan\exams\hlutaprof4\binarysearchtree\highscorebstnode.cpp
+	"highscorebstnode.h"
+
+1467363222 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\binarysearchtree\highscore.cpp
+	<iostream>
+	<time.h>
+	"highscore.h"
+
+1489582624 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\binarysearchtree\highscore.h
+	<string>
+	<set>
+
+1467364185 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\binarysearchtree\highscorebstnode.cpp
+	"highscorebstnode.h"
+
+1489581885 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\binarysearchtree\highscorebstnode.h
+	"highscore.h"
+
+1489583596 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\binarysearchtree\main.cpp
+	<iostream>
+	"highscore.h"
+	"highscorebst.h"
+
+1489583100 c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\binarysearchtree\highscorebst.h
+	<set>
+	"highscorebstnode.h"
+
+1489583078 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof4_solutions\binarysearchtree\highscorebst.cpp
+	<iostream>
+	<fstream>
+	"highscorebst.h"
+

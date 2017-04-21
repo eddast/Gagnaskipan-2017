@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1492453204 source:c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - animals\animals\main.cpp
+	<iostream>
+	"queue.h"
+	"animal.h"
+
+1492452152 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - animals\animals\queue.h
+	"linkedlist.h"
+
+1492452152 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - animals\animals\linkedlist.h
+	<cstddef>
+	<iostream>
+	"listnode.h"
+
+1492452152 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - animals\animals\listnode.h
+
+1492452984 c:\users\edda steinunn\documents\Æfingaverkefni fyrir lokapróf\Æfing - animals\animals\include\animal.h
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1487172617 source:c:\kennsla\gagnaskipan\exams\vor2017hlutaprof2_prep\recursionelfish\main.cpp
+	<iostream>
+	<string.h>
+

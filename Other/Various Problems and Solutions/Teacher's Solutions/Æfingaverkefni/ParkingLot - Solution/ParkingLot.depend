@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1467846301 source:c:\kennsla\gagnaskipan\exams\lokaprof\parkinglot\main.cpp
+	<iostream>
+	<vector>
+

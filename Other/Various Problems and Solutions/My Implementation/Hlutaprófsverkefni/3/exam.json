@@ -1,0 +1,108 @@
+{
+  "course": "T-201-GSKI, Gagnaskipan, 2017-1", 
+  "parts": [
+    {
+      "text": "<p><strong>Sko&eth;i&eth; eftirfarandi forritstexta:</strong></p>\n\n<p><tt>class House {<br />\npublic:<br />\n&nbsp; &nbsp; void makeMe() {<br />\n&nbsp; &nbsp; &nbsp; &nbsp; whatAmI = &quot;house&quot;;<br />\n&nbsp; &nbsp; }<br />\n&nbsp; &nbsp; void writeMe() {<br />\n&nbsp; &nbsp; &nbsp; &nbsp; cout &lt;&lt; &quot;I am a &quot; &lt;&lt; whatAmI;<br />\n&nbsp; &nbsp; }</tt></p>\n\n<p><tt>protected:<br />\n&nbsp; &nbsp; string whatAmI;<br />\n};</tt></p>\n\n<p><tt>class Castle : public House {<br />\npublic:<br />\n&nbsp; &nbsp; void makeMe() {<br />\n&nbsp; &nbsp; &nbsp; &nbsp; House::makeMe();<br />\n&nbsp; &nbsp; &nbsp; &nbsp; whatAmI = &quot;castle&quot;;<br />\n&nbsp; &nbsp; }<br />\n&nbsp; &nbsp; void writeMe() {<br />\n&nbsp; &nbsp; &nbsp; &nbsp; House::writeMe();<br />\n&nbsp; &nbsp; &nbsp; &nbsp; cout &lt;&lt; &quot;, I am also a &quot; &lt;&lt; whatAmI;<br />\n&nbsp; &nbsp; }<br />\n};</tt></p>\n", 
+      "id": "897f52c8-f699-49ee-8456-e058d5c3b91a", 
+      "questions": [
+        {
+          "weight": "3", 
+          "text": "<p><strong>Hvert er &uacute;ttaki&eth; &uacute;r eftirfarandi forriti:</strong></p>\n\n<p><tt>int main() {<br />\n&nbsp; &nbsp; Castle castle;<br />\n&nbsp; &nbsp; castle.makeMe();<br />\n&nbsp; &nbsp; castle.writeMe();<br />\n}</tt></p>\n", 
+          "choices": [
+            {
+              "text": "I am a castle, I am also a house", 
+              "selected": false, 
+              "id": "5684ab85-94c2-4d0d-8814-4254ee403b04"
+            }, 
+            {
+              "text": "I am a house, I am also a castle", 
+              "selected": false, 
+              "id": "fbcf0357-9f27-4e6f-8fbd-d0488b431b99"
+            }, 
+            {
+              "text": "I am a castle, I am also a castle", 
+              "selected": false, 
+              "id": "11068a8c-ffdf-4812-bef6-e4c7edb2e783"
+            }, 
+            {
+              "text": "I am a house, I am also a house", 
+              "selected": false, 
+              "id": "ad5c6538-ae11-44ee-8643-5f3f39bc4ba5"
+            }
+          ], 
+          "label": "", 
+          "type": "single_choice", 
+          "id": "75636fe3-2e60-4c7b-8fa9-63908057aadc"
+        }, 
+        {
+          "weight": "5", 
+          "text": "<p><strong>&Uacute;tsk&yacute;ri&eth; svar&nbsp;ykkar vi&eth; fyrri spurningu.</strong></p>\n", 
+          "label": "", 
+          "length": "4", 
+          "answer": "", 
+          "type": "essay", 
+          "id": "1d14e7b4-0195-4473-a3c3-fa642db28aef"
+        }
+      ], 
+      "name": "Erf\u00f0ir (Inheritance)"
+    }, 
+    {
+      "text": "<p>Svari&eth; eftirfarandi spurningum um pure virtual f&ouml;ll &iacute; C++</p>\n", 
+      "id": "375a8d4b-c861-48c9-8864-90ede0d70e28", 
+      "questions": [
+        {
+          "weight": "3", 
+          "text": "<p>Sko&eth;i&eth; eftirfarandi klasa:</p>\n\n<p><tt>class Thing {</tt></p>\n\n<p><tt>&nbsp; &nbsp; void doSomething();</tt></p>\n\n<p><tt>}</tt></p>\n\n<p>Hvernig l&iacute;tur skilgreiningin &aacute; fallinu doSomething() &uacute;t ef &thorn;a&eth; &aacute; a&eth; vera pure virtual (abstract) fall?</p>\n", 
+          "label": "", 
+          "length": "2", 
+          "answer": "", 
+          "type": "essay", 
+          "id": "3fa45fb7-3e98-460f-918b-345f553e3fce"
+        }, 
+        {
+          "weight": "5", 
+          "text": "<p>Hva&eth;a &aacute;hrif hefur &thorn;essi breyting&nbsp;&aacute; notkun fallsins doSomething() og klasans Thing?</p>\n", 
+          "label": "", 
+          "length": "4", 
+          "answer": "", 
+          "type": "essay", 
+          "id": "ce1403ca-ffa3-436f-8aa8-b74c691df1ae"
+        }
+      ], 
+      "name": "Pure virtual f\u00f6ll og abstract klasar"
+    }, 
+    {
+      "text": "<p>Sko&eth;i&eth; Tv&iacute;undartr&eacute;&eth; sem s&yacute;nt er &iacute; myndinni <strong>BinaryTree.png</strong> sem finna m&aacute;&nbsp;&iacute; m&ouml;ppunni &quot;Exam&quot; &aacute; skj&aacute;bor&eth;i pr&oacute;ft&ouml;lvunnar.</p>\n", 
+      "id": "84fb85c1-9708-42ba-bbb8-397825c85156", 
+      "questions": [
+        {
+          "weight": "3", 
+          "text": "<p>Skrifi&eth; &uacute;t innihald tr&eacute;sins, <strong>preorder</strong></p>\n", 
+          "label": "", 
+          "answer": "", 
+          "type": "short_text", 
+          "id": "23d68207-004f-48ab-a957-4bfef6ec1b7d"
+        }, 
+        {
+          "weight": "3", 
+          "text": "<p>Skrifi&eth; &uacute;t innihald tr&eacute;sins, <strong>inorder</strong></p>\n", 
+          "label": "", 
+          "answer": "", 
+          "type": "short_text", 
+          "id": "72522587-c94f-446c-a689-f0a8a1b3d761"
+        }, 
+        {
+          "weight": "3", 
+          "text": "<p>Skrifi&eth; &uacute;t innihald tr&eacute;sins, <strong>postorder</strong></p>\n", 
+          "label": "", 
+          "answer": "", 
+          "type": "short_text", 
+          "id": "6788045f-2dfa-4b7b-922d-c0beb8c8af45"
+        }
+      ], 
+      "name": "Binary Tree Traversal"
+    }
+  ], 
+  "exam_name": "Gagnskipan vor 2017 - Hlutapr\u00f3f 3", 
+  "text": "<p>Pr&oacute;fi&eth; skiptist upp &iacute; fj&oacute;ra hluta, &thorn;rj&uacute; forritunarverkefni og spurningar.<br />\nHver hlutanna fj&ouml;gurra gildir jafnt, 25% af einkunn &iacute; pr&oacute;finu.</p>\n"
+}
